@@ -1,2 +1,2 @@
-# docs
-Documentation for Paramify
+# Support
+Support Documentation and Resources for Paramify
