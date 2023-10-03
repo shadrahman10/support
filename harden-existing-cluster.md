@@ -1,4 +1,4 @@
-# How to Harden a existing cluster to CIS2/FIPS/STIG Levels
+# Hardening an existing cluster to CIS2/FIPS/STIG Levels
 
 You may use these instructions to harden an existing cluster that was created with eksctl.
 
