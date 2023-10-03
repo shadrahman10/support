@@ -14,7 +14,6 @@ export APP_NAME="paramify"
 export AWS_REGION=""
 export CLUSTER_NAME=""
 export KMS_ALIAS_NAME="alias/eks-${CLUSTER_NAME}-master-key"
-export CNI_POLICY_ARN="arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
 ```
 
 ## 1. Enable Cluster Secrets Encryption
@@ -44,24 +43,38 @@ eksctl create iamserviceaccount \
     --approve
 ```
 
-## 3. Enable all cluster logging
+## 3. Configure the VPC CNI Addon
+```
+eksctl create addon \
+    --version=v1.15.0-eksbuild.2 \
+    --name=vpc-cni
+```
+### Additional VPC CNI Configuration
+1. In the aws admin console, access the eks cluster.
+2. Under Add-ons, select the newly created Amazon VPC CNI.
+3. Click edit
+4. Expand advanced settings and find `Configuration values` text box
+5. Add the value: `{"enableNetworkPolicy": "true"}`
+
+## 4. Enable all cluster logging
 ```bash
 eksctl utils update-cluster-logging \
     --enable-types all \
-    --approve \
+    --approve
 ```
 
-## 4. Set up VPC private/public settings
-Do this in the the 
+## 5. Set up VPC private/public settings
+1. In the aws admin console, access the eks cluster.
+2. Under the Networking tab, click on Manage Networking
+3. Select the appropriate option and add sources to the CIDR block.
 
 
-## 5. Apply Network Policies
+## 6. Apply Network Policies
 ```bash
 kubectl apply -f networkpolicies.yaml
-
 ```
 
-## 6. Disable the default service account token auto-mount
+## 7. Disable the default service account token auto-mount
 ```bash
 kubectl patch serviceaccount default -p '{"automountServiceAccountToken": false}' -n default
 kubectl patch serviceaccount default -p '{"automountServiceAccountToken": false}' -n $NAMESPACE
@@ -70,7 +83,7 @@ kubectl patch serviceaccount default -p '{"automountServiceAccountToken": false}
 kubectl patch serviceaccount default -p '{"automountServiceAccountToken": false}' -n kube-node-lease
 ```
 
-## 7. Restrict pod security contexts
+## 8. Restrict pod security contexts
 ```bash
 kubectl label --overwrite ns kube-system pod-security.kubernetes.io/enforce=privileged
 kubectl label --overwrite ns kube-node-lease pod-security.kubernetes.io/enforce=baseline
