@@ -1,26 +1,24 @@
-# Hardening an existing cluster to CIS2/FIPS/STIG Levels
+# Hardening an Existing Cluster to CIS2/FIPS/STIG Levels
 
 You may use these instructions to harden an existing cluster that was created with eksctl.
 
 **Prerequisites**
 - AWS Credentials with sufficient permissions
-- `eksctl` installed
-- `kubectl` installed
+- [eksctl](https://eksctl.io/) installed
+- [kubectl](https://kubernetes.io/docs/tasks/tools/) installed and configured with the current cluster context.
 
 Export these variables:
 ```bash
 export AWS_PROFILE="default"
-export APP_NAME="paramify"
 export AWS_REGION=""
 export CLUSTER_NAME=""
-export KMS_ALIAS_NAME="alias/eks-${CLUSTER_NAME}-master-key"
 ```
 
 ## 1. Enable Cluster Secrets Encryption
 ### Create KMS Key and Alias
 ```bash
 export KEY_ARN=$(aws kms create-key --region $AWS_REGION --query KeyMetadata.Arn --output text)
-aws kms create-alias --region $AWS_REGION --alias-name $KMS_ALIAS_NAME --target-key-id $(echo $KEY_ARN | cut -d "/" -f 2)
+aws kms create-alias --region $AWS_REGION --alias-name alias/eks-paramify-master-key --target-key-id $(echo $KEY_ARN | cut -d "/" -f 2)
 ```
 
 ### Update Cluster with key
@@ -28,7 +26,7 @@ aws kms create-alias --region $AWS_REGION --alias-name $KMS_ALIAS_NAME --target-
 eksctl utils enable-secrets-encryption \
   --cluster=$CLUSTER_NAME \
   --key-arn=$KEY_ARN \
-  --region=$AWS_REGION \
+  --region=$AWS_REGION
 ```
 
 ## 2. Enable AWS VPS CNI ServiceAccount Role
@@ -37,7 +35,7 @@ eksctl create iamserviceaccount \
     --cluster=$CLUSTER_NAME \
     --namespace=kube-system \
     --name=aws-node \
-    --role-name=$APP_NAME-eks-vpccni-role\
+    --role-name=paramify-eks-vpccni-role\
     --attach-policy-arn=arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy \
     --override-existing-serviceaccounts \
     --approve
