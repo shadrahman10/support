@@ -1,0 +1,142 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: np-default
+  namespace: default
+spec:
+  podSelector: {}
+  ingress:
+    - from:
+        - ipBlock:
+            cidr: 0.0.0.0/0
+    - from:
+        - podSelector: {}
+    - from:
+        - namespaceSelector: {}
+  egress:
+    - to:
+        - ipBlock:
+            cidr: 0.0.0.0/0
+    - to:
+        - podSelector: {}
+    - to:
+        - namespaceSelector: {}
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: np-kube-node-lease
+  namespace: kube-node-lease
+spec:
+  podSelector: {}
+  ingress:
+    - from:
+        - ipBlock:
+            cidr: 0.0.0.0/0
+    - from:
+        - podSelector: {}
+    - from:
+        - namespaceSelector: {}
+  egress:
+    - to:
+        - ipBlock:
+            cidr: 0.0.0.0/0
+    - to:
+        - podSelector: {}
+    - to:
+        - namespaceSelector: {}
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: np-kube-public
+  namespace: kube-public
+spec:
+  podSelector: {}
+  ingress:
+    - from:
+        - ipBlock:
+            cidr: 0.0.0.0/0
+    - from:
+        - podSelector: {}
+    - from:
+        - namespaceSelector: {}
+  egress:
+    - to:
+        - ipBlock:
+            cidr: 0.0.0.0/0
+    - to:
+        - podSelector: {}
+    - to:
+        - namespaceSelector: {}
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: np-kube-system
+  namespace: kube-system
+spec:
+  podSelector: {}
+  ingress:
+    - from:
+        - ipBlock:
+            cidr: 0.0.0.0/0
+    - from:
+        - podSelector: {}
+    - from:
+        - namespaceSelector: {}
+  egress:
+    - to:
+        - ipBlock:
+            cidr: 0.0.0.0/0
+    - to:
+        - podSelector: {}
+    - to:
+        - namespaceSelector: {}
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: np-paramify
+  namespace: paramify
+spec:
+  # For all pods in namespace...
+  podSelector: {}
+  ingress:
+    # Allow incoming to app ports
+    - from:
+        - ipBlock:
+            cidr: 0.0.0.0/0
+      ports:
+        - port: 3000
+        - port: 5078
+        - port: 8443
+        - port: 443
+        - port: 80
+    # Allow from any pods in namespace
+    - from:
+        - podSelector: {}
+  egress:
+    # Allow outgoing to any external
+    - to:
+        - ipBlock:
+            cidr: 0.0.0.0/0
+      ports:
+        - port: 443
+        - port: 80
+        - port: 25
+        - port: 465
+        - port: 5432
+    - to:
+        - podSelector: {}
+    # Allow to DNS
+    - to:
+        - namespaceSelector: {}
+          podSelector:
+            matchLabels:
+              k8s-app: kube-dns
+      ports:
+        - port: 53
+          protocol: UDP
+        - port: 53
+          protocol: TCP
