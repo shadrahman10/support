@@ -12,9 +12,10 @@ Export these variables:
 export AWS_PROFILE="default"
 export AWS_REGION=""
 export CLUSTER_NAME=""
+export NAMESPACE="paramify" # or the application namespace
 ```
 
-## 1. Enable Cluster Secrets Encryption
+## Enable Cluster Secrets Encryption
 ### Create KMS Key and Alias
 ```bash
 export KEY_ARN=$(aws kms create-key --region $AWS_REGION --query KeyMetadata.Arn --output text)
@@ -29,7 +30,7 @@ eksctl utils enable-secrets-encryption \
   --region=$AWS_REGION
 ```
 
-## 2. Enable AWS VPS CNI ServiceAccount Role
+## Enable AWS VPS CNI ServiceAccount Role
 ```bash
 eksctl create iamserviceaccount \
     --cluster=$CLUSTER_NAME \
@@ -41,7 +42,7 @@ eksctl create iamserviceaccount \
     --approve
 ```
 
-## 3. Configure the VPC CNI Addon
+## Configure the VPC CNI Addon
 ```
 eksctl create addon \
     --version=v1.15.0-eksbuild.2 \
@@ -54,25 +55,26 @@ eksctl create addon \
 4. Expand advanced settings and find `Configuration values` text box
 5. Add the value: `{"enableNetworkPolicy": "true"}`
 
-## 4. Enable all cluster logging
+## Enable all cluster logging
 ```bash
 eksctl utils update-cluster-logging \
     --enable-types all \
     --approve
 ```
 
-## 5. Set up VPC private/public settings
+## Set up VPC private/public settings
 1. In the aws admin console, access the eks cluster.
 2. Under the Networking tab, click on Manage Networking
 3. Select the appropriate option and add sources to the CIDR block.
 
 
-## 6. Apply Network Policies
+## Apply Network Policies
 ```bash
+# modify this file if the application namespace is not paramify
 kubectl apply -f networkpolicies.yaml
 ```
 
-## 7. Disable the default service account token auto-mount
+## Disable the default service account token auto-mount
 ```bash
 kubectl patch serviceaccount default -p '{"automountServiceAccountToken": false}' -n default
 kubectl patch serviceaccount default -p '{"automountServiceAccountToken": false}' -n $NAMESPACE
@@ -81,7 +83,7 @@ kubectl patch serviceaccount default -p '{"automountServiceAccountToken": false}
 kubectl patch serviceaccount default -p '{"automountServiceAccountToken": false}' -n kube-node-lease
 ```
 
-## 8. Restrict pod security contexts
+## Restrict pod security contexts
 ```bash
 kubectl label --overwrite ns kube-system pod-security.kubernetes.io/enforce=privileged
 kubectl label --overwrite ns kube-node-lease pod-security.kubernetes.io/enforce=baseline
