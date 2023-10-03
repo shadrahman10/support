@@ -3,7 +3,6 @@
 You may use these instructions to harden an existing cluster that was created with eksctl.
 
 **Prerequisites**
-- Running a shell with bash
 - AWS Credentials with sufficient permissions
 - eksctl installed
 - kubectl installed
