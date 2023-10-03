@@ -45,6 +45,7 @@ eksctl create iamserviceaccount \
 ## Configure the VPC CNI Addon
 ```
 eksctl create addon \
+    --cluster=$CLUSTER_NAME \
     --version=v1.15.0-eksbuild.2 \
     --name=vpc-cni
 ```
@@ -58,6 +59,7 @@ eksctl create addon \
 ## Enable all cluster logging
 ```bash
 eksctl utils update-cluster-logging \
+    --cluster=$CLUSTER_NAME \
     --enable-types all \
     --approve
 ```
