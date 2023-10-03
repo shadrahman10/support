@@ -4,14 +4,14 @@ You may use these instructions to harden an existing cluster that was created wi
 
 **Prerequisites**
 - AWS Credentials with sufficient permissions
-- eksctl installed
-- kubectl installed
+- `eksctl` installed
+- `kubectl` installed
 
 Export these variables:
 ```bash
 export AWS_PROFILE="default"
 export APP_NAME="paramify"
-export AWS_REGION="us-east-1"
+export AWS_REGION=""
 export CLUSTER_NAME=""
 export KMS_ALIAS_NAME="alias/eks-${CLUSTER_NAME}-master-key"
 export CNI_POLICY_ARN="arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
