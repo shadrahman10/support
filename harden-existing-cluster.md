@@ -47,7 +47,6 @@ eksctl create iamserviceaccount \
 eksctl create addon \
     --cluster=$CLUSTER_NAME \
     --version=v1.15.0-eksbuild.2 \
-    --resolve-conflicts=overwrite \
     --name=vpc-cni
 ```
 ### Additional VPC CNI Configuration
