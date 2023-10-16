@@ -22,6 +22,11 @@ variable "ssl_cert" {
   default     = "arn:aws:acm:<region>:<account>:certificate/<cert-guid>"
 }
 
+variable "db_password" {
+  description = "RDS database password used by the Paramify."
+  default     = "super_secret"
+}
+
 variable "key_pair" {
   description = "Key pair to assign to the EC2 instance for SSH access."
   default     = "my-key-pair"
@@ -420,7 +425,7 @@ resource "aws_db_instance" "paramify_solo_db" {
   instance_class         = "db.t3.micro"
   db_name                = "postgres"
   username               = "postgres"
-  password               = "super_secret"
+  password               = "${var.db_password}"
   vpc_security_group_ids = [aws_security_group.paramify_solo_db_sg.id]
   db_subnet_group_name   = aws_db_subnet_group.paramify_solo_db_subnet_group.name
 }
