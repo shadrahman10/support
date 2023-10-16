@@ -23,7 +23,7 @@ variable "ssl_cert" {
 }
 
 variable "db_password" {
-  description = "RDS database password used by the Paramify."
+  description = "RDS database password used by Paramify."
   default     = "super_secret"
 }
 
