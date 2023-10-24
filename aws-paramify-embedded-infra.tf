@@ -213,6 +213,8 @@ resource "aws_security_group" "paramify_solo_lb_sg" {
   description = "Allow specific IPs to reach lb"
   vpc_id      = aws_vpc.paramify_solo_vpc.id
 
+  # Allow incoming 443 for HTTPS to app (backend port 3000)
+  # [ <allowed_ips> --> LB 443 ] --> EC2 3000
   ingress {
     from_port   = 443
     to_port     = 443
@@ -220,6 +222,8 @@ resource "aws_security_group" "paramify_solo_lb_sg" {
     cidr_blocks = var.allowed_ips
   }
 
+  # Allow incoming 8443 for HTTPS to installer (backend port 8800)
+  # [ <allowed_ips> --> LB 8443 ] --> EC2 8800
   ingress {
     from_port   = 8443
     to_port     = 8443
@@ -227,6 +231,8 @@ resource "aws_security_group" "paramify_solo_lb_sg" {
     cidr_blocks = var.allowed_ips
   }
 
+  # Allow outgoing to port 3000 for app on EC2 (private)
+  # <allowed_ips> --> [ LB 443 --> EC2 3000 ]
   egress {
     from_port   = 3000
     to_port     = 3000
@@ -234,6 +240,8 @@ resource "aws_security_group" "paramify_solo_lb_sg" {
     cidr_blocks = [aws_subnet.paramify_solo_private1.cidr_block, aws_subnet.paramify_solo_private2.cidr_block]
   }
 
+  # Allow outgoing to port 8800 for installer on EC2 (private)
+  # <allowed_ips> --> [ LB 8443 --> EC2 8800 ]
   egress {
     from_port   = 8800
     to_port     = 8800
@@ -247,6 +255,7 @@ resource "aws_security_group" "paramify_solo_db_sg" {
   description = "Allow database traffic from private subnet"
   vpc_id      = aws_vpc.paramify_solo_vpc.id
 
+  # Allow app/installer access to the DB on port 5432
   ingress {
     from_port   = 5432
     to_port     = 5432
@@ -260,6 +269,8 @@ resource "aws_security_group" "paramify_solo_app_sg" {
   description = "Allow selected communication in and out from App"
   vpc_id      = aws_vpc.paramify_solo_vpc.id
 
+  # Allow incoming to port 3000 from LB
+  # <allowed_ips> --> [ LB 443 --> EC2 3000 ]
   ingress {
     from_port       = 3000
     to_port         = 3000
@@ -267,6 +278,8 @@ resource "aws_security_group" "paramify_solo_app_sg" {
     cidr_blocks = [aws_subnet.paramify_solo_public1.cidr_block, aws_subnet.paramify_solo_public2.cidr_block]
   }
 
+  # Allow incoming to port 8800 from LB
+  # <allowed_ips> --> [ LB 8443 --> EC2 8800 ]
   ingress {
     from_port       = 8800
     to_port         = 8800
@@ -274,6 +287,7 @@ resource "aws_security_group" "paramify_solo_app_sg" {
     cidr_blocks = [aws_subnet.paramify_solo_public1.cidr_block, aws_subnet.paramify_solo_public2.cidr_block]
   }
 
+  # Allow EIC SSH access to app EC2 instance
   ingress {
     from_port       = 22
     to_port         = 22
@@ -281,6 +295,7 @@ resource "aws_security_group" "paramify_solo_app_sg" {
     security_groups = [aws_security_group.paramify_solo_eic_sg.id]
   }
 
+  # Allow SMTP from app out to internet (optional for mail)
   egress {
     from_port   = 25
     to_port     = 25
@@ -288,6 +303,7 @@ resource "aws_security_group" "paramify_solo_app_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  # Allow HTTP from app out to internet
   egress {
     from_port   = 80
     to_port     = 80
@@ -295,6 +311,7 @@ resource "aws_security_group" "paramify_solo_app_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  # Allow HTTPS from app out to internet
   egress {
     from_port   = 443
     to_port     = 443
@@ -302,6 +319,7 @@ resource "aws_security_group" "paramify_solo_app_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  # Allow SMTPS from app out to internet (optional for mail)
   egress {
     from_port   = 465
     to_port     = 465
@@ -309,6 +327,7 @@ resource "aws_security_group" "paramify_solo_app_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  # Allow access to DB 5432 from app
   egress {
     from_port   = 5432
     to_port     = 5432
@@ -322,6 +341,7 @@ resource "aws_security_group" "paramify_solo_eic_sg" {
   description = "Allow SSH from EIC to the private subnet"
   vpc_id      = aws_vpc.paramify_solo_vpc.id
 
+  # Allow SSH from EIC to private subnet (EC2)
   egress {
     from_port   = 22
     to_port     = 22
@@ -347,6 +367,7 @@ resource "aws_lb" "paramify_solo_lb" {
   enable_cross_zone_load_balancing = false
 }
 
+# Listener for application (LB 443 -> backend 3000)
 resource "aws_lb_listener" "paramify_solo_lb_app_listener" {
   tags = {
     Name = "${var.aws_prefix}-lb-app-listener"
@@ -362,6 +383,7 @@ resource "aws_lb_listener" "paramify_solo_lb_app_listener" {
   }
 }
 
+# Target group for application (LB 443 -> backend 3000)
 resource "aws_lb_target_group" "paramify_solo_lb_app_target" {
   name        = "${var.aws_prefix}-lb-app-target"
   port        = 3000
@@ -382,6 +404,7 @@ resource "aws_lb_target_group_attachment" "paramify_solo_lb_app_attach" {
   port             = 3000
 }
 
+# Listener for KOTS installer (LB 8443 -> backend 8800)
 resource "aws_lb_listener" "paramify_solo_lb_kots_listener" {
   tags = {
     Name = "${var.aws_prefix}-lb-kots-listener"
@@ -397,6 +420,7 @@ resource "aws_lb_listener" "paramify_solo_lb_kots_listener" {
   }
 }
 
+# Target group for KOTS installer (LB 8443 -> backend 8800)
 resource "aws_lb_target_group" "paramify_solo_lb_kots_target" {
   name        = "${var.aws_prefix}-lb-kots-target"
   port        = 8800
@@ -477,6 +501,7 @@ resource "aws_instance" "paramify_solo_app" {
   # See https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-using-eice.html to SSH
 }
 
+# EC2 instance node role (will have policy for S3)
 resource "aws_iam_role" "paramify_solo_node_role" {
   name = "${var.aws_prefix}-node-role"
 
@@ -500,6 +525,7 @@ resource "aws_iam_instance_profile" "paramify_solo_node_profile" {
   role = aws_iam_role.paramify_solo_node_role.name
 }
 
+# Policy to attach to EC2 instance node for access to S3
 resource "aws_iam_role_policy" "paramify_solo_s3_policy" {
   name = "${var.aws_prefix}-s3-policy"
   role = aws_iam_role.paramify_solo_node_role.id
