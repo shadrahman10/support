@@ -27,6 +27,11 @@ variable "db_password" {
   default     = "super_secret"
 }
 
+variable "db_port" {
+  description = "RDS database port used by Paramify."
+  default     = "5432"
+}
+
 variable "key_pair" {
   description = "Key pair to assign to the EC2 instance for SSH access."
   default     = "my-key-pair"
@@ -255,10 +260,10 @@ resource "aws_security_group" "paramify_solo_db_sg" {
   description = "Allow database traffic from private subnet"
   vpc_id      = aws_vpc.paramify_solo_vpc.id
 
-  # Allow app/installer access to the DB on port 5432
+  # Allow app/installer access to the DB port
   ingress {
-    from_port   = 5432
-    to_port     = 5432
+    from_port   = "${var.db_port}"
+    to_port     = "${var.db_port}"
     protocol    = "tcp"
     cidr_blocks = [aws_subnet.paramify_solo_private1.cidr_block, aws_subnet.paramify_solo_private2.cidr_block]
   }
@@ -327,10 +332,10 @@ resource "aws_security_group" "paramify_solo_app_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  # Allow access to DB 5432 from app
+  # Allow access to DB port from app
   egress {
-    from_port   = 5432
-    to_port     = 5432
+    from_port   = "${var.db_port}"
+    to_port     = "${var.db_port}"
     protocol    = "tcp"
     cidr_blocks = [aws_subnet.paramify_solo_private1.cidr_block, aws_subnet.paramify_solo_private2.cidr_block]
   }
@@ -450,6 +455,7 @@ resource "aws_db_instance" "paramify_solo_db" {
   db_name                = "postgres"
   username               = "postgres"
   password               = "${var.db_password}"
+  port                   = "${var.db_port}"
   vpc_security_group_ids = [aws_security_group.paramify_solo_db_sg.id]
   db_subnet_group_name   = aws_db_subnet_group.paramify_solo_db_subnet_group.name
   skip_final_snapshot    = true
