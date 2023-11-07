@@ -1,0 +1,58 @@
+# Paramify configuration
+#
+# Example install:
+#   helm registry login registry.paramify.com --username mike@paramify.com --password <license_id>
+#   helm install paramify oci://registry.paramify.com/paramify/helm/paramify --namespace paramify --values ~/values-local.yaml
+
+# Paramify main application endpoint (recommend DNS entry and custom SSL cert (see below))
+services:
+  paramify:
+    type: LoadBalancer # optionally ClusterIP or NodePort
+    annotations:
+        service.beta.kubernetes.io/azure-load-balancer-internal: "true" # optional, remove for public IP
+    ports:
+      http:
+        nodePort: null # set preferred port (30000-32767) or null to autoassign
+        port: 443
+
+# Optionally reference secret with custom SSL cert (data with tls.key/tls.cert)
+# apps:
+#   paramify:
+#     volumes:
+#     - name: paramify-secrets
+#       secret:
+#         secretName: paramify-custom-tls
+
+# Custom environment configuration (replace <val> entries)
+configmaps:
+  paramify:
+    data:
+      AUTH_SMTP_ENABLED: "true"
+      SMTP_ENABLED: "true"
+      SMTP_HOST: "<smtp_host>"
+      SMTP_PORT: "465"
+      SMTP_USER: "<smtp_username>"
+      ADMIN_EMAIL: "<admin_user_email>"
+      APP_BASE_URL: "https://paramify" # if DNS is set on LB then match here (e.g., "https://paramify.axon.com")
+      AWS_STORAGE_BUCKET_NAME: "" # leave blank for Azure
+      AZURE_STORAGE_ACCOUNT: "paramify" # match created Azure Storage account
+      AZURE_STORAGE_CONTAINER_NAME: "paramify-container" # match created Azure Storage container
+  document-robot:
+    data:
+      STORAGE_PROVIDER: "AzureBlobStorage"
+      AZURE_STORAGE_ACCOUNT: "paramify" # match created Azure Storage account
+      AZURE_STORAGE_CONTAINER_NAME: "paramify-container" # match created Azure Storage container
+
+secrets:
+  paramify:
+    data:
+      SMTP_PASSWORD: "<smtp_password>"
+
+serviceAccounts:
+  paramify:
+    annotations:
+      azure.workload.identity/client-id: "<client_id>" # client-id from Azure workload identity
+
+paramify:
+  postgresPassword: "<db_password>"
+
