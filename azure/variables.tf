@@ -12,6 +12,6 @@ variable "name_prefix" {
 
 variable "k8s_namespace" {
   type        = string
-  default     = "default"
+  default     = "paramify"
   description = "Namespace for Paramify resources in Kubernetes"
 }
