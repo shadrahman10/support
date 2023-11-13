@@ -9,8 +9,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     siteTitle: false,
     logo: {
-      light: '../public/logo-light.svg',
-      dark: '../public/logo-dark.svg',
+      light: '/logo-light.svg',
+      dark: '/logo-dark.svg',
       alt: 'Paramify logo',
     },
     nav: [
