@@ -3,14 +3,14 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Paramify",
-  description: "My Cool Descrption",
+  description: "My Cool Description",
   base: '/support/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     siteTitle: false,
     logo: {
-      light: '../assets/logo-light.svg',
-      dark: '../assets/logo-dark.svg',
+      light: '../public/logo-light.svg',
+      dark: '../public/logo-dark.svg',
       alt: 'Paramify logo',
     },
     nav: [
