@@ -4,14 +4,14 @@ layout: home
 
 hero:
   name: "Paramify"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  text: Make compliance docs simple
+  tagline: "A flexible security and compliance platform where teams can quickly organize a security strategy and automate compliance deliverables."
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: Get Started
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: Reference
       link: /api-examples
 
 features:
