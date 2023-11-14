@@ -2,10 +2,10 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Paramify",
+  title: "Paramify Docs",
   description: "My Cool Description",
   base: '/support/',
-  head: [['link', { rel: 'icon', href: '/support/favicon.svg' }]],
+  head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     siteTitle: false,
