@@ -26,7 +26,7 @@ features:
     icon: 🤖
     link: "/docs/overview"
     linkText: Start using OSCAL
-  - title: Get organized
+  - title: Get Organized
     details: Manage personnel, locations, and assets while delegating tasks and responsibilities.
     icon: 📝
     link: "/docs/overview"

@@ -29,36 +29,14 @@ export default defineConfig({
       {
         text: "Installation",
         items: [
-          { text: "Overview" },
-          {
-            text: "AWS",
-            collapsed: true,
-            items: [
-              { text: "EKS", link: "" },
-              { text: "EC2", link: "" },
-              { text: "Helm", link: "" },
-            ],
-          },
-          {
-            text: "Install with Helm",
-            collapsed: true,
-            items: [
-              { text: "Amazon EKS", link: "" },
-              { text: "Azure AKS", link: "" },
-            ],
-          },
-          {
-            text: "Install as Appliance",
-            collapsed: true,
-            items: [
-              { text: "Amazon EC2", link: "" },
-              { text: "Helm 2", link: "" },
-            ],
-          },
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "Deployment Options", link: "./deployment-options" },
+          { text: "Helm on Azure", link: "./deploy-helm-azure" },
         ],
       },
+      { text: "User Guides",
+        items: [
+          {text: "Risk Solutions", link: "./risk-solutions"},
+        ]}
     ],
     lastUpdated: {},
     socialLinks: [
@@ -75,7 +53,8 @@ export default defineConfig({
     },
     search: {
       provider: 'local'
-    }
+    },
+    outline: 'deep'
   },
 });
 
