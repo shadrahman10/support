@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Paramify"
-  text: Make compliance docs simple
+  text: Compliance docs made simple
   tagline: "A flexible security and compliance platform where teams can quickly organize a security strategy and automate compliance deliverables."
   actions:
     - theme: brand

@@ -5,6 +5,7 @@ export default defineConfig({
   title: "Paramify",
   description: "My Cool Description",
   base: '/support/',
+  head: [['link', { rel: 'icon', href: '/support/favicon.svg' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     siteTitle: false,
@@ -17,7 +18,6 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
-
     sidebar: [
       {
         text: 'Getting Started',
