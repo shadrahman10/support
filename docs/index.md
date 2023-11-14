@@ -30,7 +30,7 @@ features:
     details: Manage personnel, locations, and assets while delegating tasks and responsibilities.
     icon: 📝
     link: "/docs/overview"
-    linkText: Learn about Elements
+    linkText: Learn about elements
   - title: Deploy Anywhere
     details: Own your data without handing over sensitive permissions to privileged agents.
     icon: 🚀

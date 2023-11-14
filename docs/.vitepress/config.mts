@@ -60,12 +60,22 @@ export default defineConfig({
         ],
       },
     ],
-
+    lastUpdated: {},
     socialLinks: [
       { icon: "github", link: "https://github.com/paramify" },
       { icon: "linkedin", link: "https://www.linkedin.com/company/paramify" },
       { icon: "youtube", link: "https://www.youtube.com/@paramify" },
     ],
+    editLink: {
+      pattern: 'https://github.com/paramify/support/blob/main/docs/:path'
+    },
+    footer: {
+      message: "Made with ❤️ by Team Paramify",
+      copyright: 'Copyright © 2023 Paramify, Inc. All Rights Reserved.'
+    },
+    search: {
+      provider: 'local'
+    }
   },
 });
 
