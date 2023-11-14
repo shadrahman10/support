@@ -6,7 +6,7 @@ title: "Home"
 hero:
   name: "Paramify"
   text: Compliance docs made simple
-  tagline: "A flexible security and compliance platform where teams can quickly organize a security strategy and automate compliance deliverables."
+  tagline: "Paramify is a risk-based platform where teams can quickly organize a security strategy and automate compliance deliverables."
   actions:
     - theme: brand
       text: Get Started
@@ -16,11 +16,25 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Risk-based Compliance
+    details: Rise above controls and concentrate on crafting an exceptional security strategy.
+    icon: 🛡️
+    link: "/docs/overview"
+    linkText: Learn about Risk Solutions
+  - title: Powered by OSCAL
+    details: Machine and human readable deliverables. Complete and accurate every time.
+    icon: 🤖
+    link: "/docs/overview"
+    linkText: Start using OSCAL
+  - title: Get organized
+    details: Manage personnel, locations, and assets while delegating tasks and responsibilities.
+    icon: 📝
+    link: "/docs/overview"
+    linkText: Learn about Elements
+  - title: Deploy Anywhere
+    details: Own your data without handing over sensitive permissions to privileged agents.
+    icon: 🚀
+    link: "/docs/overview"
+    linkText: Browse installation options
 ---
 
