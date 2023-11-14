@@ -1,65 +1,71 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Paramify Docs",
   description: "My Cool Description",
-  base: '/support/',
-  head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
+  base: "/support/",
+  head: [["link", { rel: "icon", href: "/support/favicon.svg" }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     siteTitle: false,
     logo: {
-      light: '/logo-light.svg',
-      dark: '/logo-dark.svg',
-      alt: 'Paramify logo',
+      light: "/logo-light.svg",
+      dark: "/logo-dark.svg",
+      alt: "Paramify logo",
     },
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: "Home", link: "/" },
+      { text: "Examples", link: "/markdown-examples" },
     ],
     sidebar: [
       {
-        text: 'Getting Started',
+        text: "Getting Started",
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
+          { text: "Markdown Examples", link: "/markdown-examples" },
+          { text: "Runtime API Examples", link: "/api-examples" },
+        ],
       },
       {
-        text: 'Installation',
+        text: "Installation",
         items: [
-          { text: 'Overview' },
+          { text: "Overview" },
           {
-            text: 'AWS', collapsed: true, items: [
-              { text: "EKS", link: '' },
-              { text: "EC2", link: '' },
-              { text: "Helm", link: '' },
+            text: "AWS",
+            collapsed: true,
+            items: [
+              { text: "EKS", link: "" },
+              { text: "EC2", link: "" },
+              { text: "Helm", link: "" },
             ],
           },
           {
-            text: 'Install with Helm', collapsed: true, items: [
-              { text: "Amazon EKS", link: '' },
-              { text: "Azure AKS", link: '' },
+            text: "Install with Helm",
+            collapsed: true,
+            items: [
+              { text: "Amazon EKS", link: "" },
+              { text: "Azure AKS", link: "" },
             ],
           },
           {
-            text: 'Install as Appliance', collapsed: true, items: [
-              { text: "Amazon EC2", link: '' },
-              { text: "Helm 2", link: '' },
+            text: "Install as Appliance",
+            collapsed: true,
+            items: [
+              { text: "Amazon EC2", link: "" },
+              { text: "Helm 2", link: "" },
             ],
           },
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+          { text: "Markdown Examples", link: "/markdown-examples" },
+          { text: "Runtime API Examples", link: "/api-examples" },
+        ],
+      },
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
-})
+      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+    ],
+  },
+});
 
 /**
  * Install with Kubenertes
@@ -74,6 +80,6 @@ export default defineConfig({
  * Install emebedded in AWS EC2 KURL
  * Install embedded in Azure Compute (KURL)
  * Install embedded in Google Compute (KURL)
- * 
- * 
+ *
+ *
  */
