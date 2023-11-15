@@ -2,11 +2,11 @@
 Risk Solutions represent capabilities that can be mapped to various requirements.
 
 ## Overview
-Risk Solutions are a crucial part of your security strategy. They represent capabilities that your organization either currently possesses, plans to implement, or does not yet have. Importantly, these Risk Solutions are framework-agnostic, meaning they can be applied to satisfy controls from various frameworks. 
+Risk Solutions are a crucial part of your security strategy. They represent capabilities that your organization either currently possesses, plans to implement, or does not yet have. Importantly, these Risk Solutions are framework-agnostic, meaning they can be applied to satisfy controls from any framework. 
 
-Paramify maintains a library of battle-tested Risk Solutions, audited and certified many times over. Depending on your license, you are welcome to use any solution as-is, customize it to your needs, or write your own.
+Paramify maintains a library of battle-tested Risk Solutions, audited and certified many times over. Depending on your license, you are welcome to use any Risk Solutions as-is, customize it to your needs, or write your own.
 
-## Creating a Security Solution
+## Creating a Risk Solution
 To create a Risk Solution, navigate to the appropriate page and click on the "Add Solution" button. Assign a name to the solution and optionally categorize it for easier searching and filtering. After saving, you can add additional information.
 
 * **Narrative**: A brief statement explaining the capability. It should mention elements from your library. It can also use dynamic template tags to automatically populate information unique to a project. Each narrative is associated with a specific responsible role, or the person tasked with making the narrative "true".
