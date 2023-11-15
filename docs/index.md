@@ -10,10 +10,10 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /markdown-examples
+      link: /getting-started
     - theme: alt
       text: Reference
-      link: /api-examples
+      link: /getting-started
 
 features:
   - title: Risk-based Compliance

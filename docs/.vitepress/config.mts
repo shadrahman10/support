@@ -14,29 +14,47 @@ export default defineConfig({
       dark: "/logo-dark.svg",
       alt: "Paramify logo",
     },
-    nav: [
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
-    ],
+    // nav: [
+    //   { text: "Home", link: "/" },
+    //   { text: "Examples", link: "/markdown-examples" },
+    // ],
     sidebar: [
       {
-        text: "Getting Started",
+        text: "Introduction",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "Getting Started", link: "/getting-started" },
+          // { text: "Markdown Examples", link: "/markdown-examples" },
+          // { text: "Runtime API Examples", link: "/api-examples" },
         ],
       },
       {
         text: "Installation",
         items: [
-          { text: "Deployment Options", link: "./deployment-options" },
-          { text: "Helm on Azure", link: "./deploy-helm-azure" },
+          { text: "Deployment Options", link: "/deployment-options" },
+          { text: "The Paramify Installer", link: "/ppi" },
+          {
+            text: "Examples",
+            items: [
+              { text: "Helm on Azure", link: "/deploy-helm-azure" },
+              { text: "Embedded on AWS", link: "/deploy-embedded-aws" },
+            ],
+          },
         ],
       },
-      { text: "User Guides",
+      {
+        text: "User Guides",
         items: [
-          {text: "Risk Solutions", link: "./risk-solutions"},
-        ]}
+          { text: "Risk Solutions", link: "/risk-solutions" },
+          { text: "Inheritance", link: "/inheritance" },
+          { text: "Reviews", link: "/reviews" },
+          { text: "Projects", link: "/projects" },
+          { text: "Security Objectives", link: "/objectives" },
+          { text: "Attachments", link: "/attachments" },
+          { text: "Diagrams", link: "/diagrams" },
+          { text: "OSCAL", link: "/oscal" },
+          { text: "Migrate to Rev5", link: "/migrate-fedramp" },
+        ],
+      },
     ],
     lastUpdated: {},
     socialLinks: [
@@ -45,16 +63,16 @@ export default defineConfig({
       { icon: "youtube", link: "https://www.youtube.com/@paramify" },
     ],
     editLink: {
-      pattern: 'https://github.com/paramify/support/blob/main/docs/:path'
+      pattern: "https://github.com/paramify/support/blob/main/docs/:path",
     },
     footer: {
       message: "Made with ❤️ by Team Paramify",
-      copyright: 'Copyright © 2023 Paramify, Inc. All Rights Reserved.'
+      copyright: "Copyright © 2023 Paramify, Inc. All Rights Reserved.",
     },
     search: {
-      provider: 'local'
+      provider: "local",
     },
-    outline: 'deep'
+    outline: "deep",
   },
 });
 
