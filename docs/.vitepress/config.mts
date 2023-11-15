@@ -6,6 +6,7 @@ export default defineConfig({
   description: "My Cool Description",
   base: "/support/",
   head: [["link", { rel: "icon", href: "/support/favicon.svg" }]],
+  ignoreDeadLinks: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     siteTitle: false,
@@ -73,6 +74,7 @@ export default defineConfig({
       provider: "local",
     },
     outline: "deep",
+
   },
 });
 
