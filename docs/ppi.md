@@ -87,14 +87,14 @@ For an advanced installation of the kots cli, please refer to the [official docu
 3. After a few moments of initialization you are prompted for what you want the PPI Admin Console password to be.
 <img width="500" alt="image" src="https://github.com/paramify/support/assets/24945085/ecab6532-f757-4c72-95e5-6498c6bc019a">
 
-4. When the install is complete it automatically proxies the PPI UI to http://localhost:8800. [insert image here] In a browser window, access the PPI UI at http://localhost:8800 to begin configuring the paramify platform.
+4. When the install is complete it automatically proxies the PPI UI to `http://localhost:8800`. [insert image here] In a browser window, access the PPI UI at `http://localhost:8800` to begin configuring the paramify platform.
 5. Enter the password you specified during the install process.
 <img width="500" alt="image" src="https://github.com/paramify/support/assets/24945085/0c5e4d2f-858b-4fe6-a3db-2395cbb6bd7d">
 
 6. Next, you are prompted to upload your .yaml license file. Select or drag the file, and then click "Upload license".
 <img width="500" alt="image" src="https://github.com/paramify/support/assets/24945085/d1f97a20-5066-44c6-9616-b54bd94c4dd2">
 
-7. Finally, follow the steps for [Configuring Paramify](configuring-paramify)
+7. Finally, follow the steps for Configuring Paramify
 
 8. Verify the preflight checks and proceed with the installation.
 <img width="1014" alt="image" src="https://github.com/paramify/support/assets/24945085/372e23f5-2090-4425-a495-ba5e01ebe640">
