@@ -19,22 +19,22 @@ features:
   - title: Risk-based Compliance
     details: Rise above controls and concentrate on crafting an exceptional security strategy.
     icon: 🛡️
-    link: "/docs/overview"
+    link: "/risk-solutions"
     linkText: Learn about Risk Solutions
   - title: Powered by OSCAL
     details: Machine and human readable deliverables. Complete and accurate every time.
     icon: 🤖
-    link: "/docs/overview"
+    link: "/oscal"
     linkText: Start using OSCAL
   - title: Get Organized
     details: Manage personnel, locations, and assets while delegating tasks and responsibilities.
     icon: 📝
-    link: "/docs/overview"
+    link: "/getting-started"
     linkText: Learn about elements
   - title: Deploy Anywhere
     details: Own your data without handing over sensitive permissions to privileged agents.
     icon: 🚀
-    link: "/docs/overview"
+    link: "/deployment-options"
     linkText: Browse installation options
 ---
 
