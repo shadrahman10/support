@@ -6,7 +6,7 @@ title: "Home"
 hero:
   name: "Paramify"
   text: Compliance docs made simple
-  tagline: "Paramify is a risk-based platform where teams can quickly organize a security strategy and automate compliance deliverables."
+  tagline: "Paramify is a risk-based security platform where teams can quickly organize an infosec strategy and automate compliance deliverables."
   actions:
     - theme: brand
       text: Get Started
