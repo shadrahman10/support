@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Paramify Docs",
-  description: "My Cool Description",
+  description: "Compliance docs made easier",
   head: [
     ["link", { rel: "icon", href: "/favicon.svg" }],
     [
