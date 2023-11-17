@@ -1,6 +1,8 @@
 # Getting Started with Paramify
 Paramify is a flexible security and compliance platform where teams can quickly organize their security strategy and automate compliance deliverables.
 
+![paramify](/assets/hero-paramify.png)
+
 ## Overview
 This guide assumes that you are getting started from scratch with Paramify.
 
