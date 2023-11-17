@@ -1,7 +1,7 @@
 # Deployment Options
 Choose how and where you will run Paramify.
 
-![hero-k8s](/support/assets/hero-k8s.png)
+![hero-k8s](/assets/hero-k8s.png)
 
 ## Cloud or On-Prem?
 

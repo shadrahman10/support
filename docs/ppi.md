@@ -1,7 +1,7 @@
 # The Paramify Platform Installer (PPI)
 The Paramify Platform Installer (PPI) is an administrative console where you can access and manage your Paramify instance. It is also where you will go to access upgrades to new Paramify releases, as well as any updates to the installer itself. The installer consists of an Application tab where you manage your application, version history, and configuration settings.
 
-![hero-ppi](/support/assets/hero-ppi.png)
+![hero-ppi](/assets/hero-ppi.png)
 
 ## TLDR;
 1. Run the intall script and wait.
