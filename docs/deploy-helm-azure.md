@@ -2,6 +2,8 @@
 
 Paramify can be deployed using Helm into an existing Kubernetes cluster, such as AWS EKS, Azure AKS, or self-managed. 
 
+![helm](/support/assets/hero-helm.png)
+
 The following instructions are an example of how to create and deploy into an Azure AKS cluster leveraging Workload Identity (attached to a ServiceAccount) for permissions to read/write from Azure Storage. Other than the specific Terraform the overall process is generally applicable for any Helm-based install of Paramify into Kubernetes.
 
 ## Prerequisites
