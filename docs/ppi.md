@@ -117,9 +117,29 @@ Example S3 Service Account Annotations
 ```
 eks.amazonaws.com/role-arn: arn:aws:iam::$account_id:role/my-role
 ```
+Example Azure Workload Identity Service Account Annotations
+```
+azure.workload.identity/client-id: <client_id>
+```
 
 #### CDN
 AWS Cloudflare is optional and supported.
+
+### Load Balancing
+
+#### Annotation Examples
+AWS load balancer:
+```
+    # Use the following to assign an ACM cert to the loadbalancer
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:<region>:<account>:certificate/<id>
+    service.beta.kubernetes.io/aws-load-balancer-ssl-ports: http  # keep as "http"
+    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: https  # keep as "https"
+```
+Azure load balancer:
+```
+    # By default an external IP will be assigned, or use this for internal
+    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+```
 
 ### Database
 A Postgres database is required for Paramify to function properly. While Paramify supports an embedded database option, it is expected that the customer will provide an external database where snapshots and backups can be more effectively maintained.
