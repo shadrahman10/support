@@ -4,7 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "Paramify Docs",
   description: "My Cool Description",
-  head: [["link", { rel: "icon", href: "/support/favicon.svg" }]],
+  head: [["link", { rel: "icon", href: "/favicon.svg" }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     siteTitle: false,
