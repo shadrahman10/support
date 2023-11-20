@@ -130,15 +130,15 @@ AWS Cloudflare is optional and supported.
 #### Annotation Examples
 AWS load balancer:
 ```
-    # Use the following to assign an ACM cert to the loadbalancer
-    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:<region>:<account>:certificate/<id>
-    service.beta.kubernetes.io/aws-load-balancer-ssl-ports: http  # keep as "http"
-    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: https  # keep as "https"
+# Use the following to assign an ACM cert to the loadbalancer
+service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:<region>:<account>:certificate/<id>
+service.beta.kubernetes.io/aws-load-balancer-ssl-ports: http  # keep as "http"
+service.beta.kubernetes.io/aws-load-balancer-backend-protocol: https  # keep as "https"
 ```
 Azure load balancer:
 ```
-    # By default an external IP will be assigned, or use this for internal
-    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+# By default an external IP will be assigned, or use this for internal
+service.beta.kubernetes.io/azure-load-balancer-internal: "true"
 ```
 
 ### Database
