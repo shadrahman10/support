@@ -29,6 +29,7 @@ configmaps:
     data:
       AUTH_SMTP_ENABLED: "true"
       SMTP_ENABLED: "true"
+      SMTP_FROM: "Paramify <noreply@smtp_host.com>"
       SMTP_HOST: "<smtp_host>"
       SMTP_PORT: "465"
       SMTP_USER: "<smtp_username>"

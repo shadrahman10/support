@@ -17,7 +17,7 @@ kubectl kots install paramify
 ## System Requirements
 Here are the system requirements for installing Paramify on an existing Kubernetes cluster:
 
-- Paramify currently only supports deploying onto `amd64/x86_64` based architectures. Deploying onto `arm` based architectures is not not supported. 
+- Paramify currently only supports deploying onto `amd64/x86_64` based architectures. Deploying onto `arm` based architectures is not yet supported. 
 - A Kubernetes `1.19.x`, `1.20.x`, `1.21.x`, `1.22.x`, `1.23.x`, `1.24.x`, `1.25.x`, `1.26.x`, or `1.27.x` compliant cluster.
   - Paramify has tested and verified compatibility with the following managed Kubernetes providers:
     - Amazon EKS (`1.23`, `1.24`, `1.25`, `1.26`, `1.27`)
@@ -130,15 +130,15 @@ AWS Cloudflare is optional and supported.
 #### Annotation Examples
 AWS load balancer:
 ```
-    # Use the following to assign an ACM cert to the loadbalancer
-    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:<region>:<account>:certificate/<id>
-    service.beta.kubernetes.io/aws-load-balancer-ssl-ports: http  # keep as "http"
-    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: https  # keep as "https"
+# Use the following to assign an ACM cert to the loadbalancer
+service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:<region>:<account>:certificate/<id>
+service.beta.kubernetes.io/aws-load-balancer-ssl-ports: http  # keep as "http"
+service.beta.kubernetes.io/aws-load-balancer-backend-protocol: https  # keep as "https"
 ```
 Azure load balancer:
 ```
-    # By default an external IP will be assigned, or use this for internal
-    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+# By default an external IP will be assigned, or use this for internal
+service.beta.kubernetes.io/azure-load-balancer-internal: "true"
 ```
 
 ### Database
