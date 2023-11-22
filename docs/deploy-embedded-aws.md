@@ -67,7 +67,7 @@ Follow these steps to prepare the installer:
     ```
 3. Download and prepare the installer:
     ```bash
-    curl -sSL https://kurl.sh/paramify-beta | sudo bash
+    curl -sSL https://kurl.sh/paramify | sudo bash
     ```
     :::info
     This step usually takes about 10 minutes. If there are preflight warnings then correct, if needed, and proceed (e.g., you can ignore a UTC timezone warning). 
