@@ -1,5 +1,5 @@
 # Front Matter and Diagrams
-Front matter is a combination of text, tables, and diagrams describing the system.
+> Front matter is a combination of text, tables, and diagrams describing the system.
 
 ## Overview
 This guide will walk you through the process of adding front matter and diagrams to your project. Various project sections may include tables, narratives, and diagrams.

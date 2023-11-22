@@ -1,5 +1,5 @@
 # Deploy an Embedded Cluster to AWS
-Paramify can be deployed in an embedded cluster or "virtual appliance" mode, as an alternative to deploying into an existing Kubernetes cluster.
+> Paramify can be deployed in an embedded cluster or "virtual appliance" mode, as an alternative to deploying into an existing Kubernetes cluster.
 
 The following instructions are an example of how to deploy into AWS.
 

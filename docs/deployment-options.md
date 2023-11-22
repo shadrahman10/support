@@ -1,5 +1,5 @@
 # Deployment Options
-Choose how and where you will run Paramify.
+> Choose how and where you will run Paramify.
 
 ![hero-k8s](/assets/hero-k8s.png)
 

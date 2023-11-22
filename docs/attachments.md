@@ -1,5 +1,5 @@
 # Attachments
-Attachments reference your supporting documentation
+> Attachments reference your supporting documentation
 
 ## Overview
 Most projects in Paramify have a required set of attachments that need to be included with the SSP. Paramify provides a place for you to specify the **filenames** of these attachments. 

@@ -50,12 +50,14 @@ export default defineConfig({
           { text: "Deployment Options", link: "/deployment-options" },
           { text: "The Paramify Installer", link: "/ppi" },
           {
-            text: "Examples",
+            text: "Installation Examples",
+            collapsed: true,
             items: [
               { text: "Helm on Azure", link: "/deploy-helm-azure" },
               { text: "Embedded on AWS", link: "/deploy-embedded-aws" },
             ],
           },
+          { text: "UAT", link: "/uat" },
         ],
       },
       {

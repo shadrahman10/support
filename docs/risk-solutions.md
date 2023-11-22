@@ -1,5 +1,7 @@
 # Risk Solutions
-Risk Solutions represent capabilities that can be mapped to various requirements.
+> Risk Solutions represent capabilities that can be mapped to various requirements.
+
+![paramify](/assets/hero-risk-solutions.png)
 
 ## Overview
 Risk Solutions are a crucial part of your security strategy. They represent capabilities that your organization either currently possesses, plans to implement, or does not yet have. Importantly, these Risk Solutions are framework-agnostic, meaning they can be applied to satisfy controls from any framework. 
