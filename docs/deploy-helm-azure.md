@@ -71,11 +71,11 @@ Follow these steps to install the application using Helm:
 3. Review the Helm templates and then install:
     - If desired, use the `helm template` command to preview the resulting templates that will be applied.
     ```bash
-    helm template paramify oci://registry.paramify.com/paramify/beta/paramify --namespace paramify --values ./values-local.yaml
+    helm template paramify oci://registry.paramify.com/paramify/paramify --namespace paramify --values ./values-local.yaml
     ```
     - Then actually install the templates into your cluster:
     ```bash
-    helm install paramify oci://registry.paramify.com/paramify/beta/paramify --namespace paramify --values ./values-local.yaml
+    helm install paramify oci://registry.paramify.com/paramify/paramify --namespace paramify --values ./values-local.yaml
     ```
 4. If you used the default `LoadBalancer` option you should do the following to identify the IP to connect to:
     ```bash
