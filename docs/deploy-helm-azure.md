@@ -12,10 +12,10 @@ The following instructions are an example of how to create and deploy into an Az
 - A Paramify license (user and credential for Helm registry login)
 - (Recommended) An available subdomain planned to access the application (e.g., paramify.company.com)
 - (Recommended) Credentials for an SMTP server to send email
-- (Recommended) Access to configure Okta or Google Cloud Console for SSO
+- (Recommended) Access to configure Okta, Microsoft Login, or Google Cloud Console for SSO
 
 ::: tip NOTE
-You'll need to configure at least one authentication method (e.g., SMTP, Google, Okta) to be able to login to Paramify.
+You'll need to configure at least one authentication method (e.g., SMTP, Google, Microsoft, Okta) to be able to login to Paramify.
 :::
 
 ## 1. Create Infrastructure
