@@ -3,13 +3,13 @@
 
 ![hero-k8s](/assets/hero-k8s.png)
 
-## Cloud or On-Prem?
+## Paramify Cloud or Self-Hosted?
 
 Paramify is available as a cloud-based SaaS solution or can be deployed into a self-hosted environment. For ease of management it's recommended to use the Paramify Cloud environment, unless you have FedRAMP data which needs to stay in boundary in your environment. In the future, Paramify intends to offer a FedRAMP certified Paramify Cloud environment as an option for all clients.
 
-## On-Prem Deployment Options
+## Self-Hosted Deployment Options
 
-Paramify can be deployed on-prem into an existing Kubernetes cluster or to a standalone embedded cluster.
+Paramify can be self-hosted with deployment into an existing Kubernetes cluster or to a standalone embedded cluster.
 
 | Target Environment                  | Paramify Platform Installer (GUI) | Helm (CLI) |
 | ----------------------------------- | :---: | :---: |
