@@ -499,6 +499,11 @@ resource "aws_instance" "paramify_solo_app" {
   vpc_security_group_ids = [aws_security_group.paramify_solo_app_sg.id]
   iam_instance_profile   = aws_iam_instance_profile.paramify_solo_node_profile.id
 
+  metadata_options {
+    http_tokens                 = "required"
+    http_put_response_hop_limit = 2
+  }
+
   root_block_device {
     volume_size = 32
     volume_type = "gp3"
