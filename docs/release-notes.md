@@ -24,9 +24,9 @@ Once the release notes are approved and merged then notification should be sent 
 ### Improvements
 * Enable automatic or manual listing of Leveraged Authorizations
 * Deleting all Elements will leave name in text mentions
-* Add option to delete Custom Responses on import
+* Option to delete all existing Custom Responses when importing Solution Responses in Project Settings
 * Include associations to Risk Solutions in project export
-* Fix failure to import parameters under certain conditions
+* Fix failure to import Parameters under certain conditions
 * Improve sorting list of Project names and when selecting items from dropdowns
 
 ### Deployments
