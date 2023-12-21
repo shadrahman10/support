@@ -20,7 +20,7 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-paramify.png)
 
 
-## 1.19.0 (December 20, 2023)
+## 1.19.0 (December 21, 2023)
 ### Improvements
 * Add section in Project Overview to allow automatic or manual listing of Leveraged Authorizations
 * Deleting all Elements will replace mentions with text name in Risk Solutions and Custom Responses
