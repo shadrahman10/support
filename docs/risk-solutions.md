@@ -15,7 +15,6 @@ To create a Risk Solution, navigate to the appropriate page and click on the "Ad
 * **Implementation Status**: This field indicates whether the solution is currently in operation, planned for implementation, not implemented, or not applicable for some reason.
 * **Main Component**: This field helps you associate components to a set of capabilities. If left blank, it is assumed that the capability is inherent to the overall system.
 
-
 ## Mapping Risk Solutions to Controls
 Mapping Risk Solutions to control parts streamlines the management of requirement responses and reduces redundancy. To map a solution to a control, navigate to the solution detail page and click on the "Mappings" tab.
 
@@ -23,3 +22,7 @@ Risk Solutions can be mapped in three ways:
 * **To a project requirement**: Risk Solutions can be mapped directly to specific requirements in a project.
 * **To a source requirement**: Risk Solutions can be mapped generically to a source requirement, meaning it may or may not be applicable to a specific project.
 * **To a component or collection**: Risk Solutions can be mapped to a component or collection of components, meaning that the solution is only applicable when that component is in scope.
+
+<div style="position:relative;padding-top:56.25%;">
+<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/vu-kwZK65nM?si=PTgY39w8fN7Xf3KL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
