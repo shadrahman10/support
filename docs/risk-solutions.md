@@ -26,3 +26,18 @@ Risk Solutions can be mapped in three ways:
 <div style="position:relative;padding-top:56.25%;">
 <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/vu-kwZK65nM?si=PTgY39w8fN7Xf3KL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
+
+## Tailoring Risk Solutions
+If a Risk Solution almost meets your needs but not quite, Paramify lets you customize it. 
+From the Control Implementation Details page, perform the following steps: 
+1. Detach the solution from the library, which copies its details, including text, roles, and implementation status. 
+2. Now, tailor the details to fit the specific nuances of your requirement.  
+3. Once adjusted, save the solution with updated metadata, families, and subfamilies.
+4. (Optional) Rename the Risk Solution for clarity.
+5. A unique Risk Solution is created in the library linked exclusively to your project requirement.
+
+Your tailored Risk Solution is attached and reusable to map to other relevant controls across projects.
+
+<div style="position:relative;padding-top:56.25%;">
+<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;"  src="https://www.youtube.com/embed/geDlTsawTQ0?si=cl1ZVPC96etRHIGT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
