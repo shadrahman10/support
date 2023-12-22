@@ -30,6 +30,10 @@ Risk Solutions can be mapped in three ways:
 ## Tailoring Responses to Controls
 If a Risk Solution almost meets your needs but not quite, Paramify provides the following methods to customize you response: 
 * **Update Risk Solution**: When the customization is appropriate for all controls that the Risk Solution is mapped, the Risk Solution can be updated directly in the Risk Solution Library.  Navigate to the Risk Solution library and open the Risk Solution that needs to be updated.  Direct changes will apply whereever the Risk Solution is mapped.
+* **Duplicate Risk Solution**: If the existing Risk Solution is applicable for some control responses but another Risk Solution with similar details for application to other controls is needed, the existing Risk Solution can be duplicated to copy existing details.
+  1. Navigate to the Risk Solution library and open the Risk Solution that needs to be duplicated.
+  2. In the Risk Solution header menu on the right, click "Duplicate Risk Solution".
+  3. After it is copied, the details can be modified in the copied Risk Solution to update the Risk Solution for other controls.    
 * **Create New Risk Solution**: See "Creating Risk Solution" above.
 * **Create Custom Response**: Unlike Risk Solutions, Custom responses are control/requirement specific. Perform the following steps to create a Custom Response from scratch within the Control Implementation Details page:
   1. Click on the "Custom Response" button.
