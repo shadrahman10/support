@@ -17,41 +17,48 @@ Once the release notes are approved and merged then notification should be sent 
 -->
 
 # Release Notes
->Notable changes and improvements to Paramify Cloud and self-hosted deployments.
+
+> Notable changes and improvements to Paramify Cloud and self-hosted deployments.
 
 <!-- >Subscribe to release notifications (TBD) -->
 
-![paramify](/assets/hero-paramify.png)
-
+![paramify](/assets/hero-rocket.png)
 
 ## 1.19.0 (December 21, 2023)
+
 ### Improvements
-* Add section in Project Overview to allow automatic or manual listing of Leveraged Authorizations
-* Deleting all Elements will replace mentions with text name in Risk Solutions and Custom Responses
-* Option to delete all existing Custom Responses when importing Solution Responses in Project Settings
-* Retain references to applied Risk Solutions in Project export
-* Fix failure to import Parameters under certain conditions
-* Improve sorting list of Project names and when selecting items from dropdowns
+
+- Add section in Project Overview to allow automatic or manual listing of Leveraged Authorizations
+- Deleting all Elements will replace mentions with text name in Risk Solutions and Custom Responses
+- Option to delete all existing Custom Responses when importing Solution Responses in Project Settings
+- Retain references to applied Risk Solutions in Project export
+- Fix failure to import Parameters under certain conditions
+- Improve sorting list of Project names and when selecting items from dropdowns
 
 ### Deployments
+
 Allow connecting to SMTP servers with self-signed certificates by default.
 
-
 ## 1.18.1 (December 14, 2023)
+
 ### Deployments
+
 Minor improvement to include some missing app logs in support bundles.
 
-
 ## 1.18.0 (December 7, 2023)
+
 ### Improvements
-* Floating formatting toolbar will stay visible when editing long text in Risk Solutions and Custom Responses
-* Able to filter Control Implementation by Origination and Status
-* Notifications and warning messages will stay until closed
-* Able to globally toggle titles on Responses in Project Settings
-* Ensure high resolution images in documents
+
+- Floating formatting toolbar will stay visible when editing long text in Risk Solutions and Custom Responses
+- Able to filter Control Implementation by Origination and Status
+- Notifications and warning messages will stay until closed
+- Able to globally toggle titles on Responses in Project Settings
+- Ensure high resolution images in documents
 
 ### Deployments
+
 Allow sending SMTP mails without authentication by leaving either SMTP user or password blank.
 
 ### Security
+
 This release includes security-related dependency updates. Updating is recommended.
