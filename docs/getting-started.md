@@ -12,17 +12,13 @@ Paramify is a flexible security and compliance platform where teams can quickly 
 
 You should spend some time taking an inventory of your security program. This means identifying the people, processes, and technology that are involved in your security program. This will help you to determine what elements you need to add to Paramify. Paramify can help you do this by taking you through our short intake process, and then providing you with a file that can be uploaded to your workspace element library.
 
-<div style="position:relative;padding-top:56.25%;">
-<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/uEKZ8HXR1a4?si=3OJd79OaplOjZwty" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+<YouTube src="https://www.youtube.com/embed/uEKZ8HXR1a4?si=3OJd79OaplOjZwty" />
 
 ## 2. Add Risk Solutions
 
 After constructing your Element Library, you are ready to start leveraging the power of Paramify Risk Solutions. Paramify maintains a set of battle-tested Risk Solutions that you are welcome to use. You can also create your own Risk Solutions, or modify existing ones to suit your needs. The Risk Solutions make use your component library to define your organization's security capabilities.
 
-<div style="position:relative;padding-top:56.25%;">
-<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/pF9hgXxx1YU?si=JDCl8x5uPKwI4WLy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+<YouTube src="https://www.youtube.com/embed/pF9hgXxx1YU?si=JDCl8x5uPKwI4WLy" />
 
 ## 3. Create a Project
 

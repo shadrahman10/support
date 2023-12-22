@@ -28,9 +28,7 @@ Risk Solutions can be mapped in three ways:
 - **To a source requirement**: Risk Solutions can be mapped generically to a source requirement, meaning it may or may not be applicable to a specific project.
 - **To a component or collection**: Risk Solutions can be mapped to a component or collection of components, meaning that the solution is only applicable when that component is in scope.
 
-<div style="position:relative;padding-top:56.25%;">
-<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/vu-kwZK65nM?si=PTgY39w8fN7Xf3KL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+<YouTube src="https://www.youtube.com/embed/vu-kwZK65nM?si=PTgY39w8fN7Xf3KL"/>
 
 ## Tailoring Responses to Controls
 
@@ -47,9 +45,7 @@ If a Risk Solution almost meets your needs but not quite, Paramify provides the 
   2. In the menu on the right in the Custom Response header, click "Edit Settings".
   3. Update Name, Responsible Roles, Implementation Status, and Origination as needed.
 
-<div style="position:relative;padding-top:56.25%;">
-<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/0LdBlWudx9s?si=wJ9O4ejJ0tyxYCV7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+<YouTube src="https://www.youtube.com/embed/0LdBlWudx9s?si=wJ9O4ejJ0tyxYCV7"/>
 
 - **Convert Risk Solution to Custom Response**: When the Risk Solution is close but needs minor adjustments specific to a particular control/requirement, a Risk Solution applied to the control can be detached and copied as a custom response for customization specific to the control that cannot be applied to other controls or projects. Perform the following steps from the Control Implementation Details page:
   1. In the menu on the right in the Custom Response header, click "Detach from Library", which copies its details, including text, roles, and implementation status.
@@ -61,6 +57,4 @@ If a Risk Solution almost meets your needs but not quite, Paramify provides the 
   2. Update the Family, Subfamily, Responsible Roles, and Origination, as needed, and click "Yes" to save.
   3. A unique Risk Solution is created in the library linked exclusively to your project requirement. Your tailored Risk Solution is reusable to map to other relevant controls across projects.
 
-<div style="position:relative;padding-top:56.25%;">
-<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;"  src="https://www.youtube.com/embed/geDlTsawTQ0?si=cl1ZVPC96etRHIGT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+<YouTube src="https://www.youtube.com/embed/geDlTsawTQ0?si=cl1ZVPC96etRHIGT"/>

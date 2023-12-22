@@ -3,6 +3,7 @@
 Create a project to start automating compliance documentation.
 
 ## Overview
+
 A Paramify project is typically a representation of a current or prospective ATO (Authority to Operate) package for a system. It encompasses a chosen control set and a method to specify frontmatter and backmatter.
 
 ## Create a Project
@@ -14,11 +15,10 @@ A Paramify project is typically a representation of a current or prospective ATO
 5. (Optional) For a quick start, select an existing Package from the FedRAMP Marketplace. This action populates some public details about the package.
 6. Click `Add`.
 
-<div style="position:relative;padding-top:56.25%;">
-<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/wddePFJDLLk?si=ay9-Selo7J7Byyl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+<YouTube src="https://www.youtube.com/embed/wddePFJDLLk?si=ay9-Selo7J7Byyl4" />
 
 ## Create a DoD Addendum to the FedRAMP SSP
+
 If you are a Cloud Service Provider (CSP) pursuing a DoD ATO, you can create a DoD Addendum to the FedRAMP SSP. This allows you to reuse the FedRAMP SSP and add only the additional controls required for DoD.
 
 :::warning
