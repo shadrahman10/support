@@ -4,7 +4,7 @@ The Paramify Platform Installer (PPI) is an administrative console where you can
 ![hero-ppi](/assets/hero-ppi.png)
 
 ## TLDR;
-1. Run the intall script and wait.
+1. Run the install script and wait.
 ```bash
 curl https://kots.io/install | bash
 kubectl kots install paramify
@@ -17,7 +17,7 @@ kubectl kots install paramify
 ## System Requirements
 Here are the system requirements for installing Paramify on an existing Kubernetes cluster:
 
-- Paramify currently only supports deploying onto `amd64/x86_64` based architectures. Deploying onto `arm` based architectures is not yet supported. 
+- Paramify currently only supports deploying onto `amd64/x86_64` based architectures. Deploying onto `arm` based architectures is not yet supported.
 - A Kubernetes `1.19.x`, `1.20.x`, `1.21.x`, `1.22.x`, `1.23.x`, `1.24.x`, `1.25.x`, `1.26.x`, or `1.27.x` compliant cluster.
   - Paramify has tested and verified compatibility with the following managed Kubernetes providers:
     - Amazon EKS (`1.23`, `1.24`, `1.25`, `1.26`, `1.27`)
@@ -27,11 +27,11 @@ Here are the system requirements for installing Paramify on an existing Kubernet
 - 3+ node cluster for production environments to provide redundancy and high availability (HA).
   - Ensure all nodes are in the same cloud provider region or physical data center network. Nodes behind different WAN links in the same cluster are not supported.
 - Node resources:
-  - CPU: 
+  - CPU:
     - **4 cores**. The cluster must contain at least 2 cores, and should contain at least 4 cores.
-  - Memory: 
+  - Memory:
     - **1Gi free memory**. The cluster must have at least 512Mi free memory, and should have at least 1Gi free memory.
-  - Storage: 
+  - Storage:
     - **20Gi free disk space**. The cluster must have at least 10Gi free disk space, and should have at least 20Gi free disk space.
 - A load balancer or ingress controller to load balance to the Paramify platform UI.
   - Must be configured for TLS communication to the backend.

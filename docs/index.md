@@ -12,6 +12,9 @@ hero:
       text: Get Started
       link: /getting-started
     - theme: alt
+      text: Release Notes
+      link: /release-notes
+    - theme: alt
       text: Reference
       link: /getting-started
 
