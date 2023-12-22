@@ -1,3 +1,7 @@
+---
+outline: 2
+---
+
 <!--
 For each release create a new section at the top with heading including the version that clients would see in the app (i.e., 1.18.0) and release date, followed by subsections (if applicable) for:
 - New Features
