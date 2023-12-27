@@ -40,4 +40,3 @@ features:
     link: "/deployment-options"
     linkText: Browse installation options
 ---
-

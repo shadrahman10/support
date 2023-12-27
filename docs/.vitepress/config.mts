@@ -18,10 +18,10 @@ export default defineConfig({
         a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
     ],
-    ['meta', { name: 'og:type', content: 'website' }],
-    ['meta', { name: 'og:locale', content: 'en' }],
-    ['meta', { name: 'og:site_name', content: 'Paramify Docs' }],
-    ['meta', { name: 'og:image', content: '/hero-paramify-sm.png' }],
+    ["meta", { name: "og:type", content: "website" }],
+    ["meta", { name: "og:locale", content: "en" }],
+    ["meta", { name: "og:site_name", content: "Paramify Docs" }],
+    ["meta", { name: "og:image", content: "/hero-paramify-sm.png" }],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -65,6 +65,7 @@ export default defineConfig({
         text: "User Guides",
         items: [
           { text: "Risk Solutions", link: "/risk-solutions" },
+          { text: "Smart Text & Mentions", link: "/smart-text" },
           { text: "Inheritance", link: "/inheritance" },
           { text: "Reviews", link: "/reviews" },
           { text: "Projects", link: "/projects" },
