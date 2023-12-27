@@ -80,7 +80,7 @@ in person or via phone.
 ## FAQ
 
 ::: details Can I use Smart Text and Element Mentions in custom control responses?
-Yes! Smart Text and Element Mentions can be used in custom control responses responses. Smart Text will be instantly evaluated in the current context of the project.
+Yes! Smart Text and Element Mentions can be used in custom control responses. Smart Text will be instantly evaluated in the current context of the project.
 :::
 ::: details What happens if I change the name of an element being mentioned?
 If you change the name of an element, all mentions of that element will be updated to reflect the new name.
