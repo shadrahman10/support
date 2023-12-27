@@ -24,14 +24,14 @@ Paramify allows you to add dynamic text and element references to any narrative.
 
 Initiate Smart Text with `#`. Currently, Paramify supports the following dynamic smart text tags:
 
-- `#THIS SYSTEM`: The name of the project, e.g. `Acme for Government`
-- `#THIS ORGANIZATION`: The name of the organization `Acme, Inc.`
-- `#CERTIFICATION DETAIL`: The certification detail, e.g. `FedRAMP High`
-- `#PROJECT TYPE`: The type of the project, e.g. `FedRAMP`, `StateRamp`, `DoD`
+- `#THIS SYSTEM`: The name of the project, e.g. `Acme for Government`. The value is defined by **System Short Name** or **System Name** in Project Settings. The short name takes precedence.
+- `#THIS ORGANIZATION`: The name of the organization `Acme, Inc.`. The value is defined by **Service Provider** in Project Settings.
+- `#CERTIFICATION DETAIL`: The certification detail, e.g. `FedRAMP High`. This value is set when choosing project security objectives.
+- `#PROJECT TYPE`: The type of the project, e.g. `FedRAMP`, `StateRamp`, `DoD`. This value is set when the project is created.
 
-When a Risk Solution is used, the context of its usage will be used to populate the Smart Text.
+When the narrative is used, the context of its usage will be used to populate the Smart Text.
 
-**Example (Risk Solution)**
+**Example**
 
 ::: code-group
 
@@ -59,7 +59,7 @@ Initiate Element Mentions with `@`. This will automatically link the element to 
 Element Mentions, different than Smart Text, will appear as mentioned. They are not dynamic.
 :::
 
-**Example (Risk Solution)**
+**Example**
 
 ::: code-group
 
