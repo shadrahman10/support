@@ -8,15 +8,15 @@
 
 ::: info TLDR;
 
-- Type `#` to initiate Smart Text. These are dynamic template tags that can be used to automatically populate information unique to a project.
-- Type `@` to initiate Element Mentions. These are static references to elements in your library.
+- Type `#` to initiate **Smart Text**. These are dynamic template tags that can be used to automatically populate information unique to a project.
+- Type `@` to initiate **Element Mentions**. These are static references to elements in your library.
 
 :::
 
 Paramify allows you to add dynamic text and element references to any narrative. This provides many benefits, including:
 
 - Flexibility
-- Reusability across different certification and systems
+- Reusability across different certifications and systems
 - Accuracy by leveraging a "write-once-use-everywhere" paradigm
 - Discoverability of related information by linking elements together
 
@@ -31,21 +31,21 @@ Initiate Smart Text with `#`. Currently, Paramify supports the following dynamic
 
 When a Risk Solution is used, the context of its usage will be used to populate the Smart Text.
 
-**Example**
+**Example (Risk Solution)**
 
 ::: code-group
 
 ```txt [input]
 #THIS SYSTEM utilizes @AWS US East/West, a #PROJECT TYPE-compliant
 cloud platform. #THIS SYSTEM inherits local access to systems control
-capabilities, including multifactor authentication capabilities, from
+capabilities, including multi-factor authentication capabilities, from
 this cloud platform.
 ```
 
 ```txt [output]
 Acme for Government utilizes AWS US East/West, a FedRAMP-compliant
 cloud platform. Acme for Government inherits local access to systems control
-capabilities, including multifactor authentication capabilities, from
+capabilities, including multi-factor authentication capabilities, from
 this cloud platform.
 ```
 
@@ -59,18 +59,18 @@ Initiate Element Mentions with `@`. This will automatically link the element to 
 Element Mentions, different than Smart Text, will appear as mentioned. They are not dynamic.
 :::
 
-**Example**
+**Example (Risk Solution)**
 
 ::: code-group
 
 ```txt [input]
-If a user loses or compromises their password, they must create a helpdesk
+If a user loses or compromises their password, they must create a help-desk
 ticket in @Jira and the @IT Admin resets and distributes the new password
 in person or via phone.
 ```
 
 ```txt [output]
-If a user loses or compromises their password, they must create a helpdesk
+If a user loses or compromises their password, they must create a help-desk
 ticket in Jira and the IT Admin resets and distributes the new password
 in person or via phone.
 ```
