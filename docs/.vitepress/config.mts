@@ -79,7 +79,7 @@ export default defineConfig({
     ],
     lastUpdated: {},
     socialLinks: [
-      { icon: "github", link: "https://github.com/paramify" },
+      { icon: "github", link: "https://github.com/paramify/support" },
       { icon: "linkedin", link: "https://www.linkedin.com/company/paramify" },
       { icon: "youtube", link: "https://www.youtube.com/@paramify" },
     ],
