@@ -1,6 +1,8 @@
 # Projects
 
-Create a project to start automating compliance documentation.
+> Create a project to start automating compliance documentation.
+
+![paramify](/assets/hero-project.png)
 
 ## Overview
 
