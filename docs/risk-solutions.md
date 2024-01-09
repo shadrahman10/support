@@ -8,7 +8,9 @@
 
 Risk Solutions are a crucial part of your security strategy. They represent capabilities that your organization either currently possesses, plans to implement, or does not yet have. Importantly, these Risk Solutions are framework-agnostic, meaning they can be applied to satisfy controls from any framework.
 
-Paramify maintains a library of battle-tested Risk Solutions, audited and certified many times over. Depending on your license, you are welcome to use any Risk Solutions as-is, customize it to your needs, or write your own. The library of battle-test Risk Solutions is typically imported to your workspace as part of the Paramify intake process.  Those Risk Solutions can be applied to your requirements with the click of a button as shown in the following video:
+Paramify maintains a library of battle-tested Risk Solutions, audited and certified many times over. Depending on your license, you are welcome to use any Risk Solutions as-is, customize it to your needs, or write your own. 
+
+The library of battle-test Risk Solutions is typically imported to your workspace as part of the Paramify intake process.  Those Risk Solutions can be applied to your requirements with the click of a button as shown in the following video:
 
 <YouTube src="https://www.youtube.com/embed/vu-kwZK65nM?si=PTgY39w8fN7Xf3KL"/>
 
