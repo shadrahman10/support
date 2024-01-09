@@ -2,7 +2,9 @@
 > Attachments reference your supporting documentation
 
 ## Overview
-Most projects in Paramify have a required set of attachments that need to be included with the SSP. Paramify provides a place for you to specify the **filenames** of these attachments. 
+Most projects in Paramify have a required set of attachments that need to be included with the SSP. Paramify generates some of the attachments for you. For each required attachment, Paramify provides a place for you to specify the **filenames** of these attachments so they can be properly referenced by the documents generated via the Document Robot. This is all demonstrated in the following video:
+
+<YouTube src="https://www.youtube.com/embed/scvpG73j9ZE?si=zP8_kdTJi3cYSvQc" />
 
 :::warning NOTE
 Currently, Paramify does not allow you to upload these attachments to Paramify. If this is functionality would be important to you, please let us know at support@paramify.com. 
