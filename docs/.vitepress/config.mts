@@ -72,6 +72,7 @@ export default defineConfig({
           { text: "Security Objectives", link: "/objectives" },
           { text: "Attachments", link: "/attachments" },
           { text: "Diagrams", link: "/diagrams" },
+          { text: "Document Robot", link: "/doc-robot" },
           { text: "OSCAL", link: "/oscal" },
           { text: "Migrate to Rev5", link: "/migrate-fedramp" },
         ],
