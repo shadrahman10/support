@@ -8,7 +8,9 @@
 
 Risk Solutions are a crucial part of your security strategy. They represent capabilities that your organization either currently possesses, plans to implement, or does not yet have. Importantly, these Risk Solutions are framework-agnostic, meaning they can be applied to satisfy controls from any framework.
 
-Paramify maintains a library of battle-tested Risk Solutions, audited and certified many times over. Depending on your license, you are welcome to use any Risk Solutions as-is, customize it to your needs, or write your own.
+Paramify maintains a library of battle-tested Risk Solutions, audited and certified many times over. Depending on your license, you are welcome to use any Risk Solutions as-is, customize it to your needs, or write your own. The library of battle-test Risk Solutions is typically imported to your workspace as part of the Paramify intake process.  Those Risk Solutions can be applied to your requirements with the click of a button as shown in the following video:
+
+<YouTube src="https://www.youtube.com/embed/vu-kwZK65nM?si=PTgY39w8fN7Xf3KL"/>
 
 ## Creating a Risk Solution
 
@@ -28,7 +30,9 @@ Risk Solutions can be mapped in three ways:
 - **To a source requirement**: Risk Solutions can be mapped generically to a source requirement, meaning it may or may not be applicable to a specific project.
 - **To a component or collection**: Risk Solutions can be mapped to a component or collection of components, meaning that the solution is only applicable when that component is in scope.
 
-<YouTube src="https://www.youtube.com/embed/vu-kwZK65nM?si=PTgY39w8fN7Xf3KL"/>
+Collections are explained further, with relevant examples, in the following video:
+
+<YouTube src="https://www.youtube.com/embed/MYZCtGMf8mg?si=yAB-26QjaV9WxokV"/>
 
 ## Tailoring Responses to Controls
 
