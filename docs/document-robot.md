@@ -8,9 +8,14 @@ Paramify's Document Robot collates metadata and other project details to documen
 
 ## Creating a new revision
 A new revision of your document package can be created quickly, efficiently, and seamlessly within the Document Robot by performing the following steps: 
-1. Click 'Add Revision', 
-2. Select version, description, set author and date, and opt for document generation.
-3. Download the new revision.
+1. Click on 'Add Revision'.
+2. Define a version.
+3. Provide a description.
+4. Specify an Author (choose a party element from your library).
+5. Set a date (default is the current date).
+6. Click 'Save'.
+
+Once the package is ready, you can download the zip file by clicking on the 'Download' button. This zip file will contain the OSCAL SSP along with all other project documents.
 
 <YouTube src="https://www.youtube.com/embed/UkZqJWuZb7E?si=mAgjPDAC9O4p6S0s"/>
 
