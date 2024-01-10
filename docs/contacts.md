@@ -10,7 +10,7 @@ In system security plans, having accurate names, addresses, and contact points i
 Role, Party, and Location elements are created in Paramify with contact details to easily select the correct element to set for the contact.  The key contacts may vary depending on the compliance documents desired. 
 
 ```
-A FedRAMP Rev 5 project would have the following contacts available out of the box:
+A FedRAMP Rev 5 project these key contacts out of box:
 
 Project Security Plan Preparation
 - Prepared By
