@@ -36,9 +36,9 @@ This field is populated by specifying the "Information Types Received" field in 
 
 ::: details How do I model a "Hybrid" or "Shared" control origination?
 
-Risk Solutions are **single origination** by design.
+Risk Solutions are **single origination** by design. Multi-responsibiliy Risk Solutions should be broken up for best results.
 
-If you converting legacy documentation into custom control responses, you can use a combination of originations to model a hybrid or shared control.
+If you are converting legacy documentation into custom control responses, you can use a combination of originations to model a hybrid or shared control.
 
 **Hybrid** is simply `System Provider Specific` AND `System Provider Corporate`.
 
