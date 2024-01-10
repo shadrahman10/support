@@ -77,6 +77,7 @@ export default defineConfig({
           { text: "Document Robot", link: "/document-robot" },
           { text: "OSCAL", link: "/oscal" },
           { text: "Migrate to Rev5", link: "/migrate-fedramp" },
+          { text: "FAQ by Document", link: "/documents/faq" },
         ],
       },
     ],
