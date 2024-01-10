@@ -4,6 +4,8 @@ Leverage the power of machine-readable compliance documentation with OSCAL.
 ## Overview
 OSCAL (Open Security Controls Assessment Language) is a standardized language for representing security controls and assessments. Paramify provides support for OSCAL SSPs (System Security Plans). This guide demonstrates the process of creating an OSCAL SSP within Paramify.
 
+<YouTube src="https://www.youtube.com/embed/pbxCvKjnI8Q?si=19-W2GjzyesSpXz2"/>
+
 ## Steps to Generate an OSCAL SSP
 Every project within Paramify has its own OSCAL SSP. Here's how you can generate one:
 
