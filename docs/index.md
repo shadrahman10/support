@@ -14,9 +14,6 @@ hero:
     - theme: alt
       text: Release Notes
       link: /release-notes
-    - theme: alt
-      text: Reference
-      link: /getting-started
 
 features:
   - title: Risk-based Compliance
