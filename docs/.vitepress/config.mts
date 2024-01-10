@@ -70,6 +70,7 @@ export default defineConfig({
           { text: "Reviews", link: "/reviews" },
           { text: "Projects", link: "/projects" },
           { text: "Security Objectives", link: "/objectives" },
+          { text: "Key Contacts", link: "/contacts" },
           { text: "Attachments", link: "/attachments" },
           { text: "Diagrams", link: "/diagrams" },
           { text: "Document Robot", link: "/document-robot" },
