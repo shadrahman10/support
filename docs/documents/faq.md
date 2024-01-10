@@ -8,9 +8,21 @@ In a perfect world, everybody might be adept at producing and consuming OSCAL. I
 
 This FAQ will help you navigate common questions and issues related to specific documents.
 
-## FedRAMP
+## FedRAMP Rev 5
 
 ### SSP
+
+#### Table of Contents
+
+::: details How can I get the table of contents to print?
+To avoid unexpected behavior, DOCX documents must be opened with Microsoft Word. Also, when opening a document the first time, please click "Yes" when prompted to update the fields in the document.
+:::
+
+#### Section #6, #7
+
+::: details How can I populate "Data Types" in Leveraged Authorizations and Interconnections tables?
+This field is populated by specifying the "Information Types Received" field in both FedRAMP System and Interconnection components.
+:::
 
 ::: details How do I populate "Nature of Agreement" found in Leveraged Authorizations and Interconnections tables?
 
@@ -20,7 +32,13 @@ This FAQ will help you navigate common questions and issues related to specific 
 4. The `Nature of Agreement` should be populated the with the appropriate value.
    :::
 
+### Appendix A
+
 ::: details How do I model a "Hybrid" or "Shared" control origination?
+
+Risk Solutions are **single origination** by design.
+
+If you converting legacy documentation into custom control responses, you can use a combination of originations to model a hybrid or shared control.
 
 **Hybrid** is simply `System Provider Specific` AND `System Provider Corporate`.
 
@@ -29,10 +47,6 @@ This FAQ will help you navigate common questions and issues related to specific 
 - Example: `System Provider Specific` AND `Customer Provided`
 - Example: `System Provider Corporate` AND `Customer Configured`
 
-:::
-
-::: details How can I get the table of contents to print?
-To avoid unexpected behavior, DOCX documents must be opened with Microsoft Word. Also, when opening a document the first time, please click "Yes" when prompted to update the fields in the document.
 :::
 
 ###
