@@ -4,7 +4,7 @@
 ## Overview
 This guide will walk you through the process of adding front matter and diagrams to your project. Various project sections may include tables, narratives, and diagrams.
 
-<Youtube src="https://www.youtube.com/embed/rwxFYlI9Cbg?si=8rANe6LK-FxxVEEl"/>
+<YouTube src="https://www.youtube.com/embed/rwxFYlI9Cbg?si=8rANe6LK-FxxVEEl" />
 
 ## Front Matter
 To add front matter to your project, follow these steps:
