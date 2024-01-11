@@ -36,6 +36,9 @@ Document Robot streamlines adopting OSCAL - the Open Security Controls Assessmen
 
 ## Policies & Procedures
 Paramify's Document Robot automates policy creation, organizing them in an easily navigable table of contents, tailored to your environment's requirements and parameters. Simplifying policy management, it clearly defines what needs to be done.
+
+<YouTube src="https://www.youtube.com/embed/9qEA8Oa_488?si=OqePMg7p5TJxI9Ja"/>
+
 Paramify's Document Robot swiftly auto-generates project-specific procedures from control implementation statements, ideally sourced from your Global Risk Solution set, clearly defining roles in control implementation.
 
 <YouTube src="https://www.youtube.com/embed/Lm-q-LzUWIw?si=IRaP82AuCw5N1h2x"/>
