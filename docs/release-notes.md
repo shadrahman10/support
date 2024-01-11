@@ -24,6 +24,28 @@ Once the release notes are approved and merged then notification should be sent 
 
 ![paramify](/assets/hero-rocket.png)
 
+## 1.20.0 (January 11, 2024)
+
+### Improvements
+
+- Search filters persist on Elements, Control Implementations, and Risk Solutions
+- Limit next/previous navigation of Elements and Control Implementations within search results
+- Click diagram thumbnails to show full-sized image
+- Allow multiple Leveraged Authorizations in Custom Responses
+- Ability to filter search of Control Implementations by Leveraged System
+- Option to show only suggested Risk Solutions when manually linking to Control Implementation
+- Option to hide titles on Custom Responses now under Project Settings
+- More detailed error notifications on Element and Risk Solution imports
+- Document generation errors now show as tooltip to facilitate troubleshooting
+- Option to expand/collapse all response details in Control Implementation
+- Searching Acronyms and Glossary now include definitions
+- Various formatting improvements on FedRAMP Rev5 and DoD SSP documents
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
+
 ## 1.19.0 (December 21, 2023)
 
 ### Improvements
@@ -39,11 +61,13 @@ Once the release notes are approved and merged then notification should be sent 
 
 Allow connecting to SMTP servers with self-signed certificates by default.
 
+
 ## 1.18.1 (December 14, 2023)
 
 ### Deployments
 
 Minor improvement to include some missing app logs in support bundles.
+
 
 ## 1.18.0 (December 7, 2023)
 
