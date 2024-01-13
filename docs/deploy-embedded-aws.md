@@ -24,7 +24,7 @@ Paramify will use the following infrastructure in AWS:
 - S3 bucket for generated documentation
 - Load balancer to access installer and application
 
-To simplify creation of the infrastructure you can use the example Terraform file [aws-paramify-embedded-infra.tf](/paramify/support/blob/main/aws-paramify-embedded-infra.tf) to create everything in an isolated VPC. Be sure to update the variables at the top of the file according to your environment.
+To simplify creation of the infrastructure you can use the example Terraform file [aws-paramify-embedded-infra.tf](https://github.com/paramify/support/blob/main/aws-paramify-embedded-infra.tf) to create everything in an isolated VPC. Be sure to update the variables at the top of the file according to your environment.
 
 Follow these steps to create the infrastructure:
 1. Create an AWS SSL certificate for the desired subdomain (e.g., paramify.company.com)
@@ -43,7 +43,7 @@ Follow these steps to create the infrastructure:
     This will usually take a few minutes.
     :::
     - Copy the convenience output values (or run `terraform output`) that look something like:
-    ``` 
+    ```
     db_dns = "paramify-company-db.abc123abc123.us-west-2.rds.amazonaws.com"
     ec2_id = "i-0123456789example"
     lb_dns = "paramify-company-lb-1234567890.us-west-2.elb.amazonaws.com"
@@ -70,7 +70,7 @@ Follow these steps to prepare the installer:
     curl -sSL https://kurl.sh/paramify | sudo bash
     ```
     :::info
-    This step usually takes about 10 minutes. If there are preflight warnings then correct, if needed, and proceed (e.g., you can ignore a UTC timezone warning). 
+    This step usually takes about 10 minutes. If there are preflight warnings then correct, if needed, and proceed (e.g., you can ignore a UTC timezone warning).
     :::
 4. Copy and save the output after “Installation Complete” (specifically the admin password, which is required later)
 
