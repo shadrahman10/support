@@ -55,7 +55,8 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "Helm on Azure", link: "/deploy-helm-azure" },
-              { text: "Embedded on AWS", link: "/deploy-embedded-aws" },
+              { text: "Embedded in AWS", link: "/deploy-embedded-aws" },
+              { text: "EKS in AWS", link: "/deploy-eks-aws" },
             ],
           },
           { text: "UAT", link: "/uat" },

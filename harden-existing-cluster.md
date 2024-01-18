@@ -78,11 +78,9 @@ kubectl apply -f networkpolicies.yaml
 
 ## Disable the default service account token auto-mount
 ```bash
-kubectl patch serviceaccount default -p '{"automountServiceAccountToken": false}' -n default
-kubectl patch serviceaccount default -p '{"automountServiceAccountToken": false}' -n $NAMESPACE
-kubectl patch serviceaccount default -p '{"automountServiceAccountToken": false}' -n kube-system
-kubectl patch serviceaccount default -p '{"automountServiceAccountToken": false}' -n kube-public
-kubectl patch serviceaccount default -p '{"automountServiceAccountToken": false}' -n kube-node-lease
+for NS in default $NAMESPACE kube-system kube-public kube-node-lease; do
+  kubectl patch serviceaccount default -p '{"automountServiceAccountToken": false}' -n $NS
+done
 ```
 
 ## Restrict pod security contexts
@@ -93,5 +91,3 @@ kubectl label --overwrite ns kube-public pod-security.kubernetes.io/enforce=base
 kubectl label --overwrite ns $NAMESPACE pod-security.kubernetes.io/enforce=baseline
 kubectl label --overwrite ns default pod-security.kubernetes.io/enforce=restricted
 ```
-
-
