@@ -23,6 +23,10 @@ export default defineConfig({
     ["meta", { name: "og:site_name", content: "Paramify Docs" }],
     ["meta", { name: "og:image", content: "/hero-paramify-sm.png" }],
   ],
+  ignoreDeadLinks: [
+    // ignore all localhost links
+    /^https?:\/\/localhost/,
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     siteTitle: false,
