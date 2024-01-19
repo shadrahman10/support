@@ -30,7 +30,7 @@ Once the release notes are approved and merged then notification should be sent 
 ### New Features
 
 #### Collaborators Approval Workflow
-Collaborators have an optional new worklow to support approving Risk Solutions assigned to their Role. They can flag their Risk Solutions as "Approved" or "Change Requested" to assist Editors and Admins in their review process. If the Collaborator approves a Risk Solution the overall status will show as "Ready for Review", at which point an Editor or Admin can mark it reviewed.
+Collaborators have an optional new worklow to support approving Risk Solutions assigned to their Role. They can flag their Risk Solutions as "Approved" or "Change Requested" to assist Editors and Admins in their review process. If the Collaborator approves a Risk Solution the overall status will show as "Ready for Review", at which point an Editor or Admin can mark it reviewed. Note that this "Approval by Responsible Role" option will only be available when there is a Collaborator that is assigned a Role matching the Risk Solution.
 
 ![collaborator-approve](/assets/1.21-collaborator-approve.png)
 
