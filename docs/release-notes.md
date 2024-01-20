@@ -24,6 +24,40 @@ Once the release notes are approved and merged then notification should be sent 
 
 ![paramify](/assets/hero-rocket.png)
 
+
+## 1.21.0 (January 19, 2024)
+
+### New Features
+
+#### Collaborators Approval Workflow
+Collaborators have an optional new worklow to support approving Risk Solutions assigned to their Role. They can flag their Risk Solutions as "Approved" or "Change Requested" to assist Editors and Admins in their review process. If the Collaborator approves a Risk Solution the overall status will show as "Ready for Review", at which point an Editor or Admin can mark it reviewed. Note that this "Approval by Responsible Role" option will only be available when there is a Collaborator that is assigned a Role matching the Risk Solution.
+
+![collaborator-approve](/assets/1.21-collaborator-approve.png)
+
+Alternatively, if the Collaborator is unsatisfied with their Risk Solution and can't make the desired change (such as to Implementation Status or Responsible Owner) they could indicate "Change Requested" which will bubble up to those responsible for overall review. The Editor or Admin could then communicate with the Collaborator to address the feedback. Once satisfied they would click to "Resolve Change Request" and reset the Role approval status, after which they could wait for the Collaborator to approve or just mark it reviewed.
+
+![collaborator-changes](/assets/1.21-collaborator-changes.png)
+
+This Collaborator workflow is completely optional, and it is not required for Admins and Editors as they review Risk Solutions. It's intended to enable them to delegate part of the review process to Collaborators as subject matter experts to (optionally) edit and approve based on their responsible Role. See the related Collaborator Access options in Workspace Settings.
+
+### Improvements
+
+- Fixed performance issue waiting for document generation
+- Options in Workspace Settings to restrict Collaborators to only see Elements and/or Risk Solutions assigned to their role
+- When applying suggested Risk Solutions the default option is now to skip Control Implementations with existing responses
+- Able to filter for linked Risk Solutions in Control Implementations
+- Now able to review Custom Responses (similar to Risk Solutions)
+- Added loading indicator while importing files
+- Added ability to delete your own comments (or Admin can delete any)
+- Improved Risk Solutions view for lower resolution screens
+- Minor improvements to FedRAMP and DoD documents
+- Better naming convention for document attachments
+
+### Deployments
+
+Added option for automated backups of embedded database.
+
+
 ## 1.20.0 (January 11, 2024)
 
 ### Improvements
