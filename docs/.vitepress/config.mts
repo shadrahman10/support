@@ -63,6 +63,7 @@ export default defineConfig({
               { text: "EKS in AWS", link: "/deploy-eks-aws" },
             ],
           },
+          { text: "Embedded DB Backup", link: "/embedded-db-backup" },
           { text: "UAT", link: "/uat" },
         ],
       },

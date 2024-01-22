@@ -1,5 +1,5 @@
 # Deploy with Helm on Azure
-> Paramify can be deployed using Helm into an existing Kubernetes cluster, such as AWS EKS, Azure AKS, or self-managed. 
+> Paramify can be deployed using Helm into an existing Kubernetes cluster, such as AWS EKS, Azure AKS, or self-managed.
 
 ![helm](/assets/hero-helm.png)
 
@@ -21,7 +21,7 @@ You'll need to configure at least one authentication method (e.g., SMTP, Google,
 ## 1. Create Infrastructure
 Paramify will use the following infrastructure in Azure:
 - AKS Kubernetes cluster
-- PostgreSQL database (this example uses an embedded DB container, but optionally you could use Azure Database for PostgreSQL, etc.)
+- PostgreSQL database (this example uses an embedded DB container, so refer to [Embedded Postgres Backup](embedded-db-backup) for info on backups, but optionally you could use a managed solution like Azure Database for PostgreSQL, etc.)
 - Azure Storage account and container for images and generated documentation
 - Load balancer to access to the Paramify application
 
@@ -47,7 +47,7 @@ Follow these steps to create the infrastructure:
     This will usually take a few minutes.
     :::
     - Copy the convenience output values (or run `terraform output`) that look something like:
-    ``` 
+    ```
     azure_container = "paramify-container"
     azure_storage = "paramify"
     client_id = "00000000-0000-0000-0000-000000000000"

@@ -144,4 +144,4 @@ service.beta.kubernetes.io/azure-load-balancer-internal: "true"
 ### Database
 A Postgres database is required for Paramify to function properly. While Paramify supports an embedded database option, it is expected that the customer will provide an external database where snapshots and backups can be more effectively maintained.
 
-
+If an embedded database is used then a basic automated backup option is available. See [Embedded Postgres Backup](embedded-db-backup) for more details.
