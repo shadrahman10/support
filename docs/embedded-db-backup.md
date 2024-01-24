@@ -3,7 +3,7 @@
 
 For deployments using an embedded (containerized) Postgres database it's recommended to have a backup/restore strategy. An automated daily backup can be enabled in the GUI config under the "Database" section with the "Embedded Postgres Backup" option. Alternatively, when using a Helm-based install it will be enabled by default, and can be disabled by adding the following to your local `values.yaml` file:
 ```yaml
-apps:
+paramify:
   pgbackup:
     enabled: false
 ```
