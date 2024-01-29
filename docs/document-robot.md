@@ -6,7 +6,7 @@
 ## Overview
 Paramify's Document Robot collates metadata and other project details to document your System Security Plan including a detailed table of contents.
 
-:::tip NOTE Documents require Microsoft Word to work appropriately. When opening the Word document, click "Update Fields". :::
+:::tip NOTE Documents require Microsoft Word to format appropriately. When opening the Word document you may have to click 'Enable Editing' and/or agree to the popup to update the fields in the document. :::
 
 ## Creating a new revision
 A new revision of your document package can be created quickly, efficiently, and seamlessly within the Document Robot by performing the following steps: 
