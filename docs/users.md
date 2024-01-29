@@ -6,7 +6,9 @@ Paramify was intentionally designed to involve as many individuals within your o
 ## Add Users
 Using the settings icon in the top-right corner, navigate to "People & Teams", then click "Add People". Invite each user with their work email. Once a user has been added, click on the user and assign them to specific teams and roles.
 
-:::tip NOTE All authentication within Paramify is managed by your third-party SSO provider. Paramify does not create, store, or use passwords. :::
+::: tip NOTE
+All authentication within Paramify is managed by your third-party SSO provider. Paramify does not create, store, or use passwords.
+:::
 
 ## User Types
 ### Admin
@@ -22,6 +24,8 @@ Editors can create, view, edit, and delete Risk Solutions, Elements, and Project
 ### Collaborator
 Collaborators are typically include external members who possess valuable insights to the implementation and status of Risk solutions. They can view and edit Risk Solutions assigned to them, and they can also create and edit Elements. Collaborators do not have access to individual certification projects, or the ability to view nor download deliverables.
 
-:::tip NOTE All activities completed by Collaborators are tracked and displayed for transparency and accountability. :::
+::: tip NOTE
+All activities completed by Collaborators are tracked and displayed for transparency and accountability.
+:::
 
 In situations where external collaboration is not permitted, Paramify recommends assigning a user with privileged access to fulfill the role of the Collaborator. Additionally, established means such as interviews over video-conferencing can be used to gather important details in those cases.
