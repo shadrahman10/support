@@ -53,6 +53,7 @@ export default defineConfig({
         text: "Installation",
         items: [
           { text: "Deployment Options", link: "/deployment-options" },
+          { text: "Application Architecture", link: "/app-architecture" },
           { text: "The Paramify Installer", link: "/ppi" },
           {
             text: "Installation Examples",
@@ -64,6 +65,7 @@ export default defineConfig({
             ],
           },
           { text: "Embedded DB Backup", link: "/embedded-db-backup" },
+          { text: "Users and Teams", link: "/users" },
           { text: "UAT", link: "/uat" },
         ],
       },
