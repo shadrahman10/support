@@ -42,7 +42,7 @@ To create a Team click "Create Team" and then set a name and the list of members
 ### Collaborator
 Collaborators may include internal and external members who possess valuable insights to the implementation and status of Risk Solutions in their areas of expertise. They can view and edit Risk Solutions assigned to them, and they can also edit and view Elements associated to those Risk Solutions. Collaborators do not have access to individual certification projects nor the ability to view or download deliverables.
 
-In situations where external collaboration is not permitted, Paramify recommends assigning a user with privileged access to fulfill the role of the Collaborator. Additionally, established means such as interviews over video-conferencing can be used to gather important details in those cases.
+Where external collaboration is not permitted, Paramify recommends assigning a user with appropriate knowledge to fulfill the role of the Collaborator. Additionally, interviews via email, chat, or call can be used to gather important details in those cases.
 
 ### Editor
 Editors are typically internal members of the company, and enjoy full access to projects and deliverables.
