@@ -32,6 +32,48 @@ This field is populated by specifying the "Information Types Received" field in 
 4. The `Nature of Agreement` should be populated the with the appropriate value.
    :::
 
+#### Attachments
+
+::: details Which FedRAMP Rev 5 ATO Package documents are automated by Paramify today?  
+
+Paramify's goal is to generate all ATO Package documents for the user.  The table below outlines the current progress.  
+
+For the documents indicated in the column  titled `Requiremed FedRAMP Template Available`, the NIST template is available for downloaded within the Paramify platform in the relevant Attachment page.
+
+| Document                  | Paramify Generated | Required FedRAMP Template Available | Manual/Custom |
+| ----------------------------------- | :---: | :---: | :---: |
+| Confidentiality Agreement |  |  | ✅ |
+| Interconnection Agreement |  |  | ✅ |
+| Non-Disclosure Agreement |  |  | ✅ |
+| System Security Plan | ✅ |		
+| SSP Appendix A: FedRAMP Security Controls | ✅ |			
+| SSP Appendix B: Related Acronyms | ✅ - Part of SSP |	
+| SSP Appendix C: Security Policies and Procedures | ✅ |			
+| SSP Appendix D: User Guide |  |  | ✅ |
+| SSP Appendix E: Digital Identity Worksheet | ✅ - Part of SSP	|
+| SSP Appendix F: Rules of Behavior	|	| ✅ |	
+| SSP Appendix G: Information System Contingency Plan (ISCP)	|	| ✅ |
+| SSP Appendix H: Configuration Management Plan (CPM)	|	| ✅ |
+| SSP Appendix I: Incident Response Plan (IRP)	|	| ✅ |
+| SSP Appendix J: CIS and CRM Workbook | ✅ |
+| SSP Appendix K: FIPS 199 Worksheet | ✅ - Part of SSP |
+| SSP Appendix L: CSO-Specific Required Laws and Regulations | ✅ - Part of SSP |
+| SSP Appendix M: Integrated Inventory Workbook	| ✅ - significant inputs required |
+| SSP Appendix N: Continuous Monitoring Plan	|	| ✅ |
+| SSP Appendix O: Plan of Action and Milestones (POA&M)	|	| ✅ |
+| SSP Appendix P: Supply Chain Risk Management Plan (SCRMP)	|	| ✅ |
+| SSP Appendix Q: Cryptographic Modules Table	|	| ✅ |
+| SSP Appendix R: Separation of Duties Matrix |  |  | ✅ |
+| Security Assessment Plan	|	| ✅ - 3PAO |
+| Security Assessment Report	|	| ✅ - 3PAO |	
+| FedRAMP ATO Letter (required for agency packages only) |  | ✅ |  |
+
+```
+Note: A sample FedRAMP ATO Letter template is available in Word, but the actual ATO letter must be submitted as a PDF file.
+```
+
+:::
+
 ### Appendix A
 
 ::: details How do I model a "Hybrid" or "Shared" control origination?
