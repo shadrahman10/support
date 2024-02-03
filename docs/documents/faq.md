@@ -36,7 +36,7 @@ This field is populated by specifying the "Information Types Received" field in 
 
 ::: details Which FedRAMP Rev 5 ATO Package documents are automated by Paramify today?  
 
-Paramify's goal is to generate all ATO Package documents for the user.  The table below outlines the current progress.  
+Paramify's goal is to generate all feasible SSP ATO Package documents for the user.  The table below outlines the current progress.  
 
 For the documents indicated in the column  titled `Requiremed FedRAMP Template Available`, the FedRAMP template is available for downloaded within the Paramify platform in the relevant Attachment page.
 
