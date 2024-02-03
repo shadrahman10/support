@@ -32,13 +32,13 @@ This field is populated by specifying the "Information Types Received" field in 
 4. The `Nature of Agreement` should be populated the with the appropriate value.
    :::
 
-#### Attachments
+#### ATO Package Documents
 
 ::: details Which FedRAMP Rev 5 ATO Package documents are automated by Paramify today?  
 
 Paramify's goal is to generate all ATO Package documents for the user.  The table below outlines the current progress.  
 
-For the documents indicated in the column  titled `Requiremed FedRAMP Template Available`, the NIST template is available for downloaded within the Paramify platform in the relevant Attachment page.
+For the documents indicated in the column  titled `Requiremed FedRAMP Template Available`, the FedRAMP template is available for downloaded within the Paramify platform in the relevant Attachment page.
 
 | Document                  | Paramify Generated | Required FedRAMP Template Available | Manual/Custom |
 | ----------------------------------- | :---: | :---: | :---: |
@@ -67,10 +67,6 @@ For the documents indicated in the column  titled `Requiremed FedRAMP Template A
 | Security Assessment Plan	|	| ✅ - 3PAO |
 | Security Assessment Report	|	| ✅ - 3PAO |	
 | FedRAMP ATO Letter (required for agency packages only) |  | ✅ |  |
-
-```
-Note: A sample FedRAMP ATO Letter template is available in Word, but the actual ATO letter must be submitted as a PDF file.
-```
 
 :::
 
