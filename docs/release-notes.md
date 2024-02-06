@@ -25,11 +25,39 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+## 1.22.0 (February 6, 2024)
+
+### Improvements
+
+- Optimized filters on Control Requirements to improve overall performance
+- Able to filter Control Requirements by unassigned, leveraged system, review status, and response type
+- Clicking Project dashboard donut chart now links to filtered view of relevant Control Requirements
+- Fix some mentions becoming invalid during Risk Solution imports
+- Fixed searching when selecting Main Component in Risk Solutions
+- Ability to filter Risk Solutions by unassigned
+- Added option to delete all Risk Solutions
+- Fixed saving an empty Custom Response as a Risk Solution
+- Added link from Project dashboard to see Custom Responses that are not reviewed
+- Clarified difference between Users (accounts) and People (elements)
+- Added reminder that MS Word is recommended for proper document viewing
+- Fixed ordering in Project Overview when adding custom sections
+- New option to easily deselect all Control Selections
+- Prevent deleting the project-associated Plan element
+- Updated Activity to always show latest User name
+- Minor fixes to control requirements for FedRAMP Li-SaaS
+- Added missing DoD Rev5 parameters
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
+
 ## 1.21.0 (January 19, 2024)
 
 ### New Features
 
 #### Collaborators Approval Workflow
+
 Collaborators have an optional new worklow to support approving Risk Solutions assigned to their Role. They can flag their Risk Solutions as "Approved" or "Change Requested" to assist Editors and Admins in their review process. If the Collaborator approves a Risk Solution the overall status will show as "Ready for Review", at which point an Editor or Admin can mark it reviewed. Note that this "Approval by Responsible Role" option will only be available when there is a Collaborator that is assigned a Role matching the Risk Solution.
 
 ![collaborator-approve](/assets/1.21-collaborator-approve.png)
