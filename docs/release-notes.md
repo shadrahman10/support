@@ -29,9 +29,9 @@ Once the release notes are approved and merged then notification should be sent 
 
 ### Improvements
 
-- Optimized filters on Control Requirements to improve overall performance
-- Able to filter Control Requirements by unassigned, leveraged system, review status, and response type
-- Clicking Project dashboard donut chart now links to filtered view of relevant Control Requirements
+- Optimized filters on Control Implementations to improve overall performance
+- Able to filter Control Implementations by unassigned, leveraged system, review status, and response type
+- Clicking Project dashboard donut chart now links to filtered view of relevant Control Implementations
 - Fix some mentions becoming invalid during Risk Solution imports
 - Fixed searching when selecting Main Component in Risk Solutions
 - Ability to filter Risk Solutions by unassigned
