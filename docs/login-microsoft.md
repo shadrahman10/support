@@ -8,8 +8,7 @@ As part of Microsoft Entra (aka Azure AD) you can setup an app registration for 
 2. In the side navigation under _Identity_ click on _Applications_ then _App registrations_
 3. Click _New registration_ near the top left:
 ![ms-entra-register-app](/assets/ms_entra_register_app.png)
-4. Set the _Redirect URI_ as _Web_ and then the URL for where Paramify is installed, such as
-  (replacing with their domain for app.paramify.com, they might want to use accounts in this organizational directory only as well)
+4. Set the _Redirect URI_ as _Web_ and then the URL for where Paramify is installed, such as https://paramify.mycompany.com/auth/microsoft/callback (replacing with your domain)
 5. In the _Overview_ copy the _Application (client) ID_, which is used for `Microsoft Client ID` or `AUTH_MICROSOFT_CLIENT_ID` below
 6. From the _Overview_ click on _Add a certificate or secret_. Create a new client secret and make sure to copy the value down because it is only viewable on creation. This secret goes into `Microsoft Client Secret` or `AUTH_MICROSOFT_CLIENT_SECRET` mentioned below
 7. Go to _API permissions_ tab and add the _email_ and _openid_ permissions:
