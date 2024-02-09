@@ -37,13 +37,15 @@ configmaps:
       ADMIN_EMAIL: "<admin_user_email>"
       APP_BASE_URL: "https://paramify"  # if DNS is set on LB then match here (e.g., "https://paramify.mycompany.com")
       AWS_STORAGE_BUCKET_NAME: ""  # leave blank for Azure
-      AZURE_STORAGE_ACCOUNT: "paramify"  # match created Azure Storage account
+      AZURE_STORAGE_ACCOUNT: "paramify-mycompany"  # match created Azure Storage account
       AZURE_STORAGE_CONTAINER_NAME: "paramify-container"  # match created Azure Storage container
+      AZURE_STORAGE_ENDPOINT: "https://paramify-mycompany.blob.core.windows.net" # match created Azure Storage blob endpoint (or empty defaults to Azure commercial, required to set for Azure Government, i.e. https://paramify-mycompany.blob.core.usgovcloudapi.net/)
   document-robot:
     data:
       STORAGE_PROVIDER: "AzureBlobStorage"
-      AZURE_STORAGE_ACCOUNT: "paramify"  # match created Azure Storage account
+      AZURE_STORAGE_ACCOUNT: "paramify-mycompany"  # match created Azure Storage account
       AZURE_STORAGE_CONTAINER_NAME: "paramify-container"  # match created Azure Storage container
+      AZURE_STORAGE_ENDPOINT: "https://paramify-mycompany.blob.core.windows.net" # match created Azure Storage blob endpoint (or empty defaults to Azure commercial, required to set for Azure Government, i.e. https://paramify-mycompany.blob.core.usgovcloudapi.net/)
 
 secrets:
   paramify:

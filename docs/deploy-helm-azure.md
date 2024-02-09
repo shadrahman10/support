@@ -48,8 +48,9 @@ Follow these steps to create the infrastructure:
     :::
     - Copy the convenience output values (or run `terraform output`) that look something like:
     ```
+    azure_blob_endpoint = "https://paramify-mycompany.blob.core.windows.net/"
     azure_container = "paramify-container"
-    azure_storage = "paramify"
+    azure_storage = "paramify-mycompany"
     client_id = "00000000-0000-0000-0000-000000000000"
     kubernetes_cluster_name = "paramify-aks"
     resource_group_name = "paramify-rg"

@@ -17,6 +17,10 @@ output "azure_container" {
   value = azurerm_storage_container.container.name
 }
 
+output "azure_blob_endpoint" {
+  value = azurerm_storage_account.storage.primary_blob_endpoint
+}
+
 output "client_id" {
   value = azurerm_user_assigned_identity.workload_id.client_id
 }
