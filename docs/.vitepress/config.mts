@@ -64,6 +64,15 @@ export default defineConfig({
               { text: "EKS in AWS", link: "/deploy-eks-aws" },
             ],
           },
+          {
+            text: "Login Options",
+            collapsed: true,
+            items: [
+              { text: "Overview", link: "/login-options" },
+              { text: "Microsoft SSO", link: "/login-microsoft" },
+              { text: "Okta SSO", link: "/login-okta" },
+            ],
+          },
           { text: "Embedded DB Backup", link: "/embedded-db-backup" },
           { text: "Users and Teams", link: "/users" },
           { text: "UAT", link: "/uat" },
