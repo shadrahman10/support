@@ -25,6 +25,34 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+## 1.23.0 (February 16, 2024)
+
+### Improvements
+
+- Show Element type icon and tooltip in list when selecting mentions
+- Use substring search on short and long names for mentions
+- Allow merging cells (horizontally) in tables within text
+- Re-add Advanced Parameters and Project Settings to Actions menu on Control Implementations
+- Quick "view" link to see control text when adjusting mappings on Risk Solutions
+- Fixed error when clicking on certain parts of the Risk Solutions chart to see filtered views
+- Added new "demo mode" to allow limited functionality in specified workspaces
+- Rename attachments to new standard when migrating from FedRAMP Rev4 to Rev5
+- Prevent deleting locked Organization object from workspace
+- No longer generates empty Policies and Procedures doc when no controls are selected
+- Corrected rare OSCAL generation error due to broken mentions
+- Fixed error when navigating between Advanced Parameter Settings
+- Updated certain controls to properly show as "withdrawn"
+
+### Deployments
+
+- Now supports Azure Blob storage in Azure Government (see [new config](https://github.com/paramify/support/blob/main/azure/values-local.yaml.example#L40-L48))
+- Fixed use of persistent volume in embedded DB (may require backup/restore of DB)
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
+
 ## 1.22.0 (February 6, 2024)
 
 ### Improvements
