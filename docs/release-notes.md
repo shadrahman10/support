@@ -25,6 +25,24 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+## 1.24.0 (February 23, 2024)
+
+### Improvements
+
+- Projects: Initial NIST 800-171/172 catalogs and foundation for CMMC (coming soon)
+- Advanced Parameters: Added "fast forward" navigation buttons to skip to previous/next incomplete
+- Advanced Parameters: Shows current, total, and incomplete counts
+- Project Dashboard: No longer shows sections which have no data
+- Key Contacts: Removed unnecessary entries for FedRAMP projects
+- Fixed Project Dashboard to report proper count of Custom Responses, if any
+- Fixed UI bug that could cause the Advanced Parameters window to not open or to close unexpectedly
+- Fixed minor UI issue when navigating after adding images to Elements
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
+
 ## 1.23.0 (February 16, 2024)
 
 ### Improvements
