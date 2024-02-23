@@ -35,8 +35,8 @@ Once the release notes are approved and merged then notification should be sent 
 - Project Dashboard: No longer shows sections which have no data
 - Key Contacts: Removed unnecessary entries for FedRAMP projects
 - Fixed Project Dashboard to report proper count of Custom Responses, if any
-- Fixed UI bug that could cause the Advanced Parameters window to not open or to close unexpectedly
-- Fixed minor UI issue when navigating after adding images to Elements
+- Fixed Advanced Parameters UI bug that could cause the window to not open or to close unexpectedly
+- Fixed Elements minor UI issue when navigating after adding an image
 
 ### Security
 
