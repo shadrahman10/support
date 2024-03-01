@@ -25,6 +25,17 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+## 1.25.0 (March 1, 2024)
+
+### Improvements
+
+- Key Contacts: Made view more compact, including proper party icon and image, if set
+- Controls Implementation: Show family/subfamily and sort by name in Link Risk Solutions view
+- Elements: Always sort view by name
+- UI: More consistent Previous/Next buttons and tooltips
+- Fixed Key Contacts to always default by project type
+
+
 ## 1.24.0 (February 23, 2024)
 
 ### Improvements
