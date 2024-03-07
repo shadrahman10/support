@@ -22,7 +22,7 @@ You'll need to configure at least one authentication method (e.g., SMTP, Google,
 :::
 
 ## 1. Create Infrastructure
-Paramify will use the following infrastructure in AWS:
+Paramify will use the following infrastructure in Azure:
 - VM instance to run Paramify
 - Azure Database for PostgreSQL
 - Blob Storage container for images and generated documentation
@@ -39,7 +39,7 @@ Follow these steps to create the infrastructure:
     terraform init
     terraform plan
     ```
-    - Apply the configuration to create AWS resources:
+    - Apply the configuration to create Azure resources:
     ```bash
     terraform apply
     ```
