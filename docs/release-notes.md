@@ -25,6 +25,21 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+## 1.26.0 (March 7, 2024)
+
+### Improvements
+
+- Implementations/Risk Solutions: Added support for images in rich text fields
+- Documents: Initial CMMC document generation completed (pre-beta)
+- Projects: Improved progress bars to animate progress and reduce shifting during load
+- Projects: Adjusted dashboard progress to more heavily weight by count of controls
+- Issues: Initial structure for POAMs support (alpha)
+- Fixed Custom Response review status to be saved in project export
+- Fixed Risk Solutions view to avoid shifting during page load
+- Fixed Key Contacts to fit odd-sized images properly into avatar
+- Fixed Project side navigation to properly highlight Controls sections
+
+
 ## 1.25.0 (March 1, 2024)
 
 ### Improvements
