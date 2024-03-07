@@ -1,0 +1,30 @@
+# NOTE: This deployment method is a work in progress, with Storage permissions still incomplete
+
+variable "region" {
+  type        = string
+  default     = "westus2"
+  description = "Region for all created resources"
+}
+
+variable "name_prefix" {
+  type        = string
+  default     = "paramify-mycompany"
+  description = "Prefix for created resources"
+}
+
+variable "db_password" {
+  type        = string
+  default     = "change_me"
+  description = "Password for the Azure SQL Database"
+}
+
+variable "username" {
+  type        = string
+  description = "The username for the local account that will be created on the new VM."
+  default     = "paramify"
+}
+
+variable "allowed_ips" {
+  description = "Company egress IPs that should be allowed to access app and installer."
+  default     = ["192.168.0.1/32"]
+}
