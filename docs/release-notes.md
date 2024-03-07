@@ -37,7 +37,7 @@ Once the release notes are approved and merged then notification should be sent 
 - Fixed Custom Response review status to be saved in project export
 - Fixed Risk Solutions view to avoid shifting during page load
 - Fixed Key Contacts to fit odd-sized images properly into avatar
-- Fixed Project side navigation to properly highlight Controls sections
+- Fixed Project side navigation to properly highlight active Controls section
 
 
 ## 1.25.0 (March 1, 2024)
