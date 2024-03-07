@@ -11,7 +11,6 @@ The following instructions are an example of how to deploy into Azure.
 ## Prerequisites
 - Azure CLI and authenticated user with sufficient permissions to create resources
 - [terraform](https://www.terraform.io/) CLI installed (if using the example .tf files)
-- [kubectl](https://kubernetes.io/docs/reference/kubectl/) CLI installed
 - A Paramify license (user and credential for Helm registry login)
 - (Recommended) An available subdomain planned to access the application (e.g., paramify.mycompany.com)
 - (Recommended) Credentials for an SMTP server to send email
