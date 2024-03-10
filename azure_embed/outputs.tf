@@ -1,3 +1,12 @@
+output "key_public" {
+  value = jsondecode(azapi_resource_action.ssh_public_key_gen.output).publicKey
+}
+
+output "key_private" {
+  sensitive = true
+  value = jsondecode(azapi_resource_action.ssh_public_key_gen.output).privateKey
+}
+
 output "resource_group_name" {
   value = azurerm_resource_group.rg.name
 }
@@ -26,14 +35,3 @@ output "azure_blob_endpoint" {
   value = azurerm_storage_account.storage.primary_blob_endpoint
 }
 
-output "client_id" {
-  value = azurerm_linux_virtual_machine.vm.identity[0].principal_id
-}
-
-output "key_public" {
-  value = jsondecode(azapi_resource_action.ssh_public_key_gen.output).publicKey
-}
-
-output "key_private" {
-  value = jsondecode(azapi_resource_action.ssh_public_key_gen.output).privateKey
-}

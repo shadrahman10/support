@@ -1,4 +1,4 @@
-# Deploy with Helm on Azure
+# Deploy with Helm to Azure AKS
 > Paramify can be deployed using Helm into an existing Kubernetes cluster, such as AWS EKS, Azure AKS, or self-managed.
 
 ![helm](/assets/hero-helm.png)

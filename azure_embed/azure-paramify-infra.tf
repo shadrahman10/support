@@ -1,4 +1,6 @@
-# Resource Group
+###########################################################################
+## Resource Group
+###########################################################################
 resource "azurerm_resource_group" "rg" {
   location = var.region
   name     = "${var.name_prefix}-rg"
@@ -8,7 +10,9 @@ resource "azurerm_resource_group" "rg" {
   }
 }
 
-# Postgres Database
+###########################################################################
+## Postgres Database
+###########################################################################
 resource "azurerm_postgresql_flexible_server" "db" {
   name                   = "${var.name_prefix}-db"
   resource_group_name    = azurerm_resource_group.rg.name
@@ -40,7 +44,9 @@ resource "azurerm_postgresql_flexible_server_firewall_rule" "db_fw" {
   end_ip_address   = azurerm_linux_virtual_machine.vm.public_ip_address
 }
 
-# Storage Account
+###########################################################################
+## Storage Account/Container and Role Assignment
+###########################################################################
 resource "azurerm_storage_account" "storage" {
   name                     = replace(var.name_prefix, "/[^a-z0-9]*/", "")
   resource_group_name      = azurerm_resource_group.rg.name
@@ -54,21 +60,21 @@ resource "azurerm_storage_account" "storage" {
   }
 }
 
-# Storage Container
 resource "azurerm_storage_container" "container" {
   name                  = "${var.name_prefix}-container"
   storage_account_name  = azurerm_storage_account.storage.name
   container_access_type = "private"
 }
 
-# Blob access for VM
 resource "azurerm_role_assignment" "vm_blob_contributor" {
   scope                = azurerm_storage_account.storage.id
   role_definition_name = "Storage Blob Data Contributor"
   principal_id         = azurerm_linux_virtual_machine.vm.identity[0].principal_id
 }
 
-# SSH Keys
+###########################################################################
+## SSH Keys
+###########################################################################
 resource "azapi_resource_action" "ssh_public_key_gen" {
   type        = "Microsoft.Compute/sshPublicKeys@2022-11-01"
   resource_id = azapi_resource.ssh_public_key.id
@@ -85,7 +91,9 @@ resource "azapi_resource" "ssh_public_key" {
   parent_id = azurerm_resource_group.rg.id
 }
 
-# Virtual Network
+###########################################################################
+## Network
+###########################################################################
 resource "azurerm_virtual_network" "vnet" {
   name                = "${var.name_prefix}-vnet"
   address_space       = ["10.10.0.0/16"]
@@ -93,7 +101,6 @@ resource "azurerm_virtual_network" "vnet" {
   resource_group_name = azurerm_resource_group.rg.name
 }
 
-# Subnet
 resource "azurerm_subnet" "subnet" {
   name                 = "${var.name_prefix}-subnet"
   resource_group_name  = azurerm_resource_group.rg.name
@@ -102,7 +109,6 @@ resource "azurerm_subnet" "subnet" {
   service_endpoints    = ["Microsoft.Sql", "Microsoft.Storage"]
 }
 
-# Public IPs
 resource "azurerm_public_ip" "lb_ip" {
   name                = "${var.name_prefix}-lb-ip"
   location            = azurerm_resource_group.rg.location
@@ -119,7 +125,9 @@ resource "azurerm_public_ip" "vm_ip" {
   allocation_method   = "Dynamic"
 }
 
-# Network Security Groups
+###########################################################################
+## Security Groups
+###########################################################################
 resource "azurerm_network_security_group" "nsg" {
   name                = "${var.name_prefix}-nsg"
   location            = azurerm_resource_group.rg.location
@@ -150,71 +158,14 @@ resource "azurerm_network_security_group" "nsg" {
   }
 }
 
-# VM Network Interface
-resource "azurerm_network_interface" "vm_nic" {
-  name                = "${var.name_prefix}-vm-nic"
-  location            = azurerm_resource_group.rg.location
-  resource_group_name = azurerm_resource_group.rg.name
-
-  ip_configuration {
-    name                          = "${var.name_prefix}-vm-nic-ipconfig"
-    subnet_id                     = azurerm_subnet.subnet.id
-    private_ip_address_allocation = "Dynamic"
-    public_ip_address_id          = azurerm_public_ip.vm_ip.id
-  }
-}
-
-# Security Group Association
 resource "azurerm_subnet_network_security_group_association" "nsg_association" {
   network_security_group_id = azurerm_network_security_group.nsg.id
   subnet_id                 = azurerm_subnet.subnet.id
 }
 
-# VM
-resource "azurerm_linux_virtual_machine" "vm" {
-  name                  = "${var.name_prefix}-vm"
-  location              = azurerm_resource_group.rg.location
-  resource_group_name   = azurerm_resource_group.rg.name
-  network_interface_ids = [azurerm_network_interface.vm_nic.id]
-  size                  = "Standard_B4als_v2"
-
-  tags = {
-    environment = var.name_prefix
-  }
-
-  identity {
-    type = "SystemAssigned"
-  }
-
-  os_disk {
-    name                 = "${var.name_prefix}-disk"
-    caching              = "ReadWrite"
-    storage_account_type = "Premium_LRS"
-    disk_size_gb         = "40"
-  }
-
-  source_image_reference {
-    publisher = "Canonical"
-    offer     = "0001-com-ubuntu-server-jammy"
-    sku       = "22_04-lts-gen2"
-    version   = "latest"
-  }
-
-  computer_name                   = "${var.name_prefix}-vm"
-  admin_username                  = var.username
-  disable_password_authentication = true
-
-  admin_ssh_key {
-    username   = var.username
-    public_key = jsondecode(azapi_resource_action.ssh_public_key_gen.output).publicKey
-  }
-
-  boot_diagnostics {
-    storage_account_uri = azurerm_storage_account.storage.primary_blob_endpoint
-  }
-}
-
-# Load Balancer to VM
+###########################################################################
+## Load Balancer
+###########################################################################
 resource "azurerm_lb" "lb" {
   name                = "${var.name_prefix}-lb"
   location            = azurerm_resource_group.rg.location
@@ -224,7 +175,6 @@ resource "azurerm_lb" "lb" {
   frontend_ip_configuration {
     name                 = "${var.name_prefix}-frontend"
     public_ip_address_id = azurerm_public_ip.lb_ip.id
-    # load_balancer_rules  = []
   }
 
   tags = {
@@ -279,4 +229,63 @@ resource "azurerm_lb_rule" "app_rule" {
   frontend_port                  = 443
   backend_port                   = 3000
   backend_address_pool_ids       = [azurerm_lb_backend_address_pool.pool.id]
+}
+
+###########################################################################
+## VM
+###########################################################################
+resource "azurerm_linux_virtual_machine" "vm" {
+  name                  = "${var.name_prefix}-vm"
+  location              = azurerm_resource_group.rg.location
+  resource_group_name   = azurerm_resource_group.rg.name
+  network_interface_ids = [azurerm_network_interface.vm_nic.id]
+  size                  = "Standard_B4als_v2"
+
+  tags = {
+    environment = var.name_prefix
+  }
+
+  identity {
+    type = "SystemAssigned"
+  }
+
+  os_disk {
+    name                 = "${var.name_prefix}-disk"
+    caching              = "ReadWrite"
+    storage_account_type = "Premium_LRS"
+    disk_size_gb         = "40"
+  }
+
+  source_image_reference {
+    publisher = "Canonical"
+    offer     = "0001-com-ubuntu-server-jammy"
+    sku       = "22_04-lts-gen2"
+    version   = "latest"
+  }
+
+  computer_name                   = "${var.name_prefix}-vm"
+  admin_username                  = var.username
+  disable_password_authentication = true
+
+  admin_ssh_key {
+    username   = var.username
+    public_key = jsondecode(azapi_resource_action.ssh_public_key_gen.output).publicKey
+  }
+
+  boot_diagnostics {
+    storage_account_uri = azurerm_storage_account.storage.primary_blob_endpoint
+  }
+}
+
+resource "azurerm_network_interface" "vm_nic" {
+  name                = "${var.name_prefix}-vm-nic"
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name                          = "${var.name_prefix}-vm-nic-ipconfig"
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = "Dynamic"
+    public_ip_address_id          = azurerm_public_ip.vm_ip.id
+  }
 }

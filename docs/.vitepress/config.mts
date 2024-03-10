@@ -59,9 +59,10 @@ export default defineConfig({
             text: "Installation Examples",
             collapsed: true,
             items: [
-              { text: "Helm on Azure", link: "/deploy-helm-azure" },
               { text: "Embedded in AWS", link: "/deploy-embedded-aws" },
-              { text: "EKS in AWS", link: "/deploy-eks-aws" },
+              { text: "Embedded in Azure", link: "/deploy-embedded-azure" },
+              { text: "EKS in AWS via PPI", link: "/deploy-eks-aws" },
+              { text: "AKS in Azure via Helm", link: "/deploy-helm-azure" },
             ],
           },
           {
