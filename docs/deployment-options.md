@@ -25,14 +25,15 @@ Kubernetes provides a scalable and highly resilient infrastructure for running a
 
 If you want to deploy Paramify into an existing Kubernetes cluster you can use either the Paramify Platform Installer GUI or Helm CLI.
 
-* The **Paramify Platform Installer** is a GUI-based admin console which supports easy configuration and lifecycle management, including deploying and upgrading the Paramify application. See [Paramify Platform Installer](ppi) for details on how to setup the GUI and then deploy Paramify.
-* **Helm** is a commonly used CLI method of configuring and installing an application into a Kubernetes cluster. See [Helm Deploy to Azure](deploy-helm-azure) for an example of creating an AKS cluster with Terraform and deploying Paramify via Helm.
-
-For a more detailed example of standing up an EKS cluster in AWS and then deploying Paramify into it you could follow the instructions at [Deploy to EKS in AWS](deploy-eks-aws).
+* The **Paramify Platform Installer** is a GUI-based admin console which supports easy configuration and lifecycle management, including deploying and upgrading the Paramify application.
+  * See [Paramify Platform Installer](ppi) for details on how to setup the GUI and then deploy Paramify.
+  * For a more detailed example of standing up an EKS cluster in AWS and then deploying Paramify into it you could follow the instructions at [AWS EKS via PPI](deploy-eks-aws).
+* **Helm** is a commonly used CLI method of configuring and installing an application into a Kubernetes cluster.
+  * See [Azure AKS via Helm](deploy-helm-azure) for an example of creating an AKS cluster with Terraform and deploying Paramify via Helm.
 
 ### Embedded Cluster
 An embedded cluster is a single-node solution which can be more easily managed, but is not as resilient or scalable as a full Kubernetes cluster.
 
 If Kubernetes isn't available you can deploy onto a single VM as an embedded cluster using the Paramify Platform Installer GUI. This involves providing a persistent VM (AWS EC2, Azure VM, etc.) to which you can SSH to setup the installer. Then managing the Paramify application is done via the GUI.
 
-See [Paramify in Embedded Cluster](deploy-embedded-aws) for a short example of building infrastructure with Terraform and deploying Paramify onto an AWS EC2 instance.
+See [Embedded in AWS](deploy-embedded-aws) for a short example of building infrastructure with Terraform and deploying Paramify onto an AWS EC2 instance, or [Embedded in Azure](deploy-embedded-azure) for a similar example on an Azure VM.
