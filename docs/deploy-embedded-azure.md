@@ -64,6 +64,7 @@ Follow these steps to prepare the installer:
     ```bash
     terraform output -raw key_private > vm_key
     terraform output -raw key_public > vm_key.pub
+    chmod 400 vm_key
     ```
 2. SSH into the VM using the key:
     - For example, using the `vm_ip` from terraform output execute the following:
