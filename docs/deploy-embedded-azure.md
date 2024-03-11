@@ -69,7 +69,7 @@ Follow these steps to prepare the installer:
 2. SSH into the VM using the key:
     - For example, using the `vm_ip` from terraform output execute the following:
     ```bash
-    ssh -i vm_key paramify@200.1.2.3
+    ssh -i vm_key paramify@`terraform output -raw vm_ip`
     ```
 3. Update the VM instance (then reboot, if applicable):
     ```bash
