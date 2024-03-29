@@ -41,15 +41,15 @@ Once the release notes are approved and merged then notification should be sent 
 - Fixed Attachments view to properly refresh remarks when navigating
 - Fixed Collections import to properly link applicable products
 - Fixed Dashboard charts to include User/Role filters when clicking to detail view
+- Fixed Implementations to remove unused parameters
 - Fixed Imports to prevent submitting without selected file and improve various warnings
 - Fixed Imports with images in rich text content with some storage providers
-- Fixed Implementations to remove unused parameters
 - Fixed Key Contacts to select the Person/Org created with "+ Create" button
+- Fixed Paramify Cloud application "502" errors caused by large headers
 - Fixed Project Dashboard "Select Control Set" link when no controls are selected
 - Fixed Revision History to better sort version numbers
 - Fixed Risk Solutions and custom responses mishandling images in text in some cases
 - Fixed Risk Solutions to prevent deleting narrative when removing extra responsible role
-- Fixed application "502" errors caused by large headers
 
 ### Security
 
