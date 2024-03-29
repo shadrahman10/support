@@ -25,6 +25,37 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+## 1.27.0 (March 27, 2024)
+
+### Improvements
+
+- Attachments: Icons now indicate which are automatically generated or can download templates
+- Documents: Added User Summary as Appendix S to FedRAMP Rev 5
+- Documents: Policies and Procedures attachment added to CMMC (pre-beta)
+- Implementations/Risk Solutions: Remarks now support mentions and rich text formatting
+- Implementations/Risk Solutions: Tables in rich text can now set a header row
+- Issues: Added summary dashboard, filters, sorting, and detail views for POAMs (alpha)
+- Projects: Revision History can now be uploaded
+- Fixed Advanced Parameters using "Show DoD" flag to be more persistent
+- Fixed Attachments to show "Not Applicable" status as complete only with remarks
+- Fixed Attachments view to properly refresh remarks when navigating
+- Fixed Collections import to properly link applicable products
+- Fixed Dashboard charts to include User/Role filters when clicking to detail view
+- Fixed Imports to prevent submitting without selected file and improve various warnings
+- Fixed Imports with images in rich text content with some storage providers
+- Fixed Implementations to remove unused parameters
+- Fixed Key Contacts to select the Person/Org created with "+ Create" button
+- Fixed Project Dashboard "Select Control Set" link when no controls are selected
+- Fixed Revision History to better sort version numbers
+- Fixed Risk Solutions and custom responses mishandling images in text in some cases
+- Fixed Risk Solutions to prevent deleting narrative when removing extra responsible role
+- Fixed application "502" errors caused by large headers
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
+
 ## 1.26.0 (March 7, 2024)
 
 ### Improvements
