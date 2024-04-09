@@ -69,11 +69,11 @@ For the documents indicated in the column  titled `Requiremed FedRAMP Template A
 | Security Assessment Report	|	| ✅ - 3PAO |	
 | FedRAMP ATO Letter (required for agency packages only) |  | ✅ |  |
 
+<sup>*</sup> Paramify added Appendices to simplify responses to Access
+Controls around least privilege and separation of duties.
+
 Refer to [FedRAMP Initial Authorization Package Checklist](https://www.fedramp.gov/assets/resources/templates/FedRAMP-Initial-Authorization-Package-Checklist.xlsx) from FedRAMP.gov to confirm package requirements.
-```
-<sup>*</sup> Not required appendixes - Added to simplify Paramify user's response to Access
-Controlsaround least privilege and separation of duties.
-```
+
 :::
 
 ### Appendix A
