@@ -1,8 +1,9 @@
 # Deploy an Embedded Cluster to AWS
 > Paramify can be deployed in an embedded cluster or "virtual appliance" mode, as an alternative to deploying into an existing Kubernetes cluster.
 
-The following instructions are an example of how to deploy into AWS.
+<YouTube src="https://www.youtube.com/embed/hHPVGQq-zrA?si=caqQ4So4pJo4pvNF" />
 
+The following instructions are an example of how to deploy into AWS.
 
 ## Prerequisites
 - AWS SSO login with sufficient permissions to create resources
