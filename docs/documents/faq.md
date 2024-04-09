@@ -53,21 +53,26 @@ For the documents indicated in the column  titled `Requiremed FedRAMP Template A
 | SSP Appendix E: Digital Identity Worksheet | ✅ - Part of SSP	|
 | SSP Appendix F: Rules of Behavior	|	| ✅ |	
 | SSP Appendix G: Information System Contingency Plan (ISCP)	|	| ✅ |
-| SSP Appendix H: Configuration Management Plan (CPM)	|	| ✅ |
-| SSP Appendix I: Incident Response Plan (IRP)	|	| ✅ |
+| SSP Appendix H: Configuration Management Plan (CPM)	|	| | ✅ |
+| SSP Appendix I: Incident Response Plan (IRP)	|	|  | ✅ |
 | SSP Appendix J: CIS and CRM Workbook | ✅ |
 | SSP Appendix K: FIPS 199 Worksheet | ✅ - Part of SSP |
 | SSP Appendix L: CSO-Specific Required Laws and Regulations | ✅ - Part of SSP |
 | SSP Appendix M: Integrated Inventory Workbook	| ✅ - significant inputs required |
 | SSP Appendix N: Continuous Monitoring Plan	|	| ✅ |
 | SSP Appendix O: Plan of Action and Milestones (POA&M)	|	| ✅ |
-| SSP Appendix P: Supply Chain Risk Management Plan (SCRMP)	|	| ✅ |
+| SSP Appendix P: Supply Chain Risk Management Plan (SCRMP)	|	|  | ✅ |
 | SSP Appendix Q: Cryptographic Modules Table	|	| ✅ |
-| SSP Appendix R: Separation of Duties Matrix |  |  | ✅ |
+| SSP Appendix R: Separation of Duties Matrix^*^ |  |  | ✅ |
+| SSP Appendix S: User Summary Table^*^ | ✅ |
 | Security Assessment Plan	|	| ✅ - 3PAO |
 | Security Assessment Report	|	| ✅ - 3PAO |	
 | FedRAMP ATO Letter (required for agency packages only) |  | ✅ |  |
 
+Refer to [FedRAMP Initial Authorization Package Checklist]([https://www.fedramp.gov/assets/resources/templates/FedRAMP-Initial-Authorization-Package-Checklist.xlsx]) for ATO checklist provided by FedRAMP.
+```
+^*^ Not required appendixes - Added to simplify Paramify user's response to Access Controls around least privilege and separation of duties.
+```
 :::
 
 ### Appendix A
