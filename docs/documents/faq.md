@@ -63,16 +63,16 @@ For the documents indicated in the column  titled `Requiremed FedRAMP Template A
 | SSP Appendix O: Plan of Action and Milestones (POA&M)	|	| ✅ |
 | SSP Appendix P: Supply Chain Risk Management Plan (SCRMP)	|	|  | ✅ |
 | SSP Appendix Q: Cryptographic Modules Table	|	| ✅ |
-| SSP Appendix R: Separation of Duties Matrix^*^ |  |  | ✅ |
+| SSP Appendix R: Separation of Duties Matrix<sup>*</sup> |  |  | ✅ |
 | SSP Appendix S: User Summary Table<sup>*</sup> | ✅ |
 | Security Assessment Plan	|	| ✅ - 3PAO |
 | Security Assessment Report	|	| ✅ - 3PAO |	
 | FedRAMP ATO Letter (required for agency packages only) |  | ✅ |  |
 
-Refer to [FedRAMP Initial Authorization Package Checklist](https://www.fedramp.gov/assets/resources/templates/FedRAMP-Initial-Authorization-Package-Checklist.xlsx) for ATO checklist provided by FedRAMP.
+Refer to [FedRAMP Initial Authorization Package Checklist](https://www.fedramp.gov/assets/resources/templates/FedRAMP-Initial-Authorization-Package-Checklist.xlsx) from FedRAMP.gov to confirm package requirements.
 ```
-^*^ Not required appendixes - Added to simplify Paramify user's response to Access Controls
-around least privilege and separation of duties.
+<sup>*</sup> Not required appendixes - Added to simplify Paramify user's response to Access
+Controlsaround least privilege and separation of duties.
 ```
 :::
 
