@@ -10,6 +10,9 @@ Users access the application via load balancer (configured with a valid SSL cert
 
 The Admin Console provided as part of the [Paramify Platform Installer](/ppi) is the recommended deployment method, as it can be used to manage configuration then deploy and upgrade the application containers over time. The Admin Console is normally only accessed by the systems administrators to deploy and maintain the environment.
 
+## Encryption
+Paramify Cloud and self-hosted deployments leverage encryption in transit and at rest for data stored in both database (e.g., AWS RDS PostgreSQL) and object store (e.g., AWS S3) using validated cloud provider solutions. Communication to and between the application containers is also encrypted and leverages FIPS-enabled OpenSSL.
+
 ::: tip NOTE
 All application communication paths are encrypted by default, including between the load balancer and application and dependencies
 :::
