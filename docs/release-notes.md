@@ -25,6 +25,31 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+## 1.28.0 (April 18, 2024)
+
+### Improvements
+
+- Issues: Improved detail view of Observations, Deviations, and Recommendations
+- Issues: Initial version of OSCAL generation of POAMs
+- Issues: Added initial ability to attach Evidence
+- Issues: Added support for deleting Issues
+- Projects: Added ability to create base project when creating new DoD project
+- Projects: SPRS score included on CMMC dashboard
+- Fixed Attachments to highlight and show newly created Custom Attachment
+- Fixed Attachments for Li-SaaS projects to reduce list of required
+- Fixed Attachments to prevent changing filename extension of generated files
+- Fixed Documents to correct CSP inheritance in CRM and leverage Risk Solutions to explain customer responsibilities
+- Fixed Imports to improve warning messages and identify missing fields in source file
+- Fixed Key Contacts by removing FedRAMP contacts from CMMC projects
+- Fixed Mentions to allow dragging the scrollbar when selecting Elements
+- Fixed User management to better support multiple workspaces
+- Fixed Warnings in browser on several pages related to library deprecations and improvements
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
+
 ## 1.27.0 (March 27, 2024)
 
 ### Improvements
