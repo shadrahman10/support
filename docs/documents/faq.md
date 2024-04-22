@@ -18,6 +18,12 @@ This FAQ will help you navigate common questions and issues related to specific 
 To avoid unexpected behavior, DOCX documents must be opened with Microsoft Word. Also, when opening a document the first time, please click "Yes" when prompted to update the fields in the document.
 :::
 
+#### General System Description
+
+::: details Where does the General System Description come from?
+Your General System Description comes form the System Function or Purpose located a project's Project Overview.
+:::
+
 #### Section #6, #7
 
 ::: details How can I populate "Data Types" in Leveraged Authorizations and Interconnections tables?
@@ -34,42 +40,42 @@ This field is populated by specifying the "Information Types Received" field in 
 
 #### ATO Package Documents
 
-::: details Which FedRAMP Rev 5 ATO Package documents are automated by Paramify today?  
+::: details Which FedRAMP Rev 5 ATO Package documents are automated by Paramify today?
 
-Paramify's goal is to generate all feasible SSP ATO Package documents for the user.  The table below outlines the current progress.  
+Paramify's goal is to generate all feasible SSP ATO Package documents for the user. The table below outlines the current progress.
 
-For the documents indicated in the column  titled `Requiremed FedRAMP Template Available`, the FedRAMP template is available for downloaded within the Paramify platform in the relevant Attachment page.
+For the documents indicated in the column titled `Requiremed FedRAMP Template Available`, the FedRAMP template is available for downloaded within the Paramify platform in the relevant Attachment page.
 
-| Document                  | Paramify Generated | Required FedRAMP Template Available | Manual/Custom |
-| ----------------------------------- | :---: | :---: | :---: |
-| Confidentiality Agreement |  |  | ✅ |
-| Interconnection Agreement |  |  | ✅ |
-| Non-Disclosure Agreement |  |  | ✅ |
-| System Security Plan | ✅ |		
-| SSP Appendix A: FedRAMP Security Controls | ✅ |			
-| SSP Appendix B: Related Acronyms | ✅ - Part of SSP |	
-| SSP Appendix C: Security Policies and Procedures | ✅ |			
-| SSP Appendix D: User Guide |  |  | ✅ |
-| SSP Appendix E: Digital Identity Worksheet | ✅ - Part of SSP	|
-| SSP Appendix F: Rules of Behavior	|	| ✅ |	
-| SSP Appendix G: Information System Contingency Plan (ISCP)	|	| ✅ |
-| SSP Appendix H: Configuration Management Plan (CPM)	|	| | ✅ |
-| SSP Appendix I: Incident Response Plan (IRP)	|	|  | ✅ |
-| SSP Appendix J: CIS and CRM Workbook | ✅ |
-| SSP Appendix K: FIPS 199 Worksheet | ✅ - Part of SSP |
-| SSP Appendix L: CSO-Specific Required Laws and Regulations | ✅ - Part of SSP |
-| SSP Appendix M: Integrated Inventory Workbook	| ✅ - significant inputs required |
-| SSP Appendix N: Continuous Monitoring Plan	|	| ✅ |
-| SSP Appendix O: Plan of Action and Milestones (POA&M)	|	| ✅ |
-| SSP Appendix P: Supply Chain Risk Management Plan (SCRMP)	|	|  | ✅ |
-| SSP Appendix Q: Cryptographic Modules Table	|	| ✅ |
-| SSP Appendix R: Separation of Duties Matrix<sup>*</sup> |  |  | ✅ |
-| SSP Appendix S: User Summary Table<sup>*</sup> | ✅ |
-| Security Assessment Plan	|	| ✅ - 3PAO |
-| Security Assessment Report	|	| ✅ - 3PAO |	
-| FedRAMP ATO Letter (required for agency packages only) |  | ✅ |  |
+| Document                                                   |        Paramify Generated        | Required FedRAMP Template Available | Manual/Custom |
+| ---------------------------------------------------------- | :------------------------------: | :---------------------------------: | :-----------: |
+| Confidentiality Agreement                                  |                                  |                                     |      ✅       |
+| Interconnection Agreement                                  |                                  |                                     |      ✅       |
+| Non-Disclosure Agreement                                   |                                  |                                     |      ✅       |
+| System Security Plan                                       |                ✅                |
+| SSP Appendix A: FedRAMP Security Controls                  |                ✅                |
+| SSP Appendix B: Related Acronyms                           |         ✅ - Part of SSP         |
+| SSP Appendix C: Security Policies and Procedures           |                ✅                |
+| SSP Appendix D: User Guide                                 |                                  |                                     |      ✅       |
+| SSP Appendix E: Digital Identity Worksheet                 |         ✅ - Part of SSP         |
+| SSP Appendix F: Rules of Behavior                          |                                  |                 ✅                  |
+| SSP Appendix G: Information System Contingency Plan (ISCP) |                                  |                 ✅                  |
+| SSP Appendix H: Configuration Management Plan (CPM)        |                                  |                                     |      ✅       |
+| SSP Appendix I: Incident Response Plan (IRP)               |                                  |                                     |      ✅       |
+| SSP Appendix J: CIS and CRM Workbook                       |                ✅                |
+| SSP Appendix K: FIPS 199 Worksheet                         |         ✅ - Part of SSP         |
+| SSP Appendix L: CSO-Specific Required Laws and Regulations |         ✅ - Part of SSP         |
+| SSP Appendix M: Integrated Inventory Workbook              | ✅ - significant inputs required |
+| SSP Appendix N: Continuous Monitoring Plan                 |                                  |                 ✅                  |
+| SSP Appendix O: Plan of Action and Milestones (POA&M)      |                                  |                 ✅                  |
+| SSP Appendix P: Supply Chain Risk Management Plan (SCRMP)  |                                  |                                     |      ✅       |
+| SSP Appendix Q: Cryptographic Modules Table                |                                  |                 ✅                  |
+| SSP Appendix R: Separation of Duties Matrix<sup>\*</sup>   |                                  |                                     |      ✅       |
+| SSP Appendix S: User Summary Table<sup>\*</sup>            |                ✅                |
+| Security Assessment Plan                                   |                                  |              ✅ - 3PAO              |
+| Security Assessment Report                                 |                                  |              ✅ - 3PAO              |
+| FedRAMP ATO Letter (required for agency packages only)     |                                  |                 ✅                  |               |
 
-<sup>*</sup> Paramify added Appendices to simplify responses to Access
+<sup>\*</sup> Paramify added Appendices to simplify responses to Access
 Controls around least privilege and separation of duties.
 
 Refer to [FedRAMP Initial Authorization Package Checklist](https://www.fedramp.gov/assets/resources/templates/FedRAMP-Initial-Authorization-Package-Checklist.xlsx) from FedRAMP.gov to confirm package requirements.
