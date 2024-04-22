@@ -21,7 +21,7 @@ To avoid unexpected behavior, DOCX documents must be opened with Microsoft Word.
 #### General System Description
 
 ::: details Where does the General System Description come from?
-Your General System Description comes form the System Function or Purpose located a project's Project Overview.
+Your General System Description comes form the System Function or Purpose located in a project's Project Overview.
 :::
 
 #### Section #6, #7
