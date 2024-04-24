@@ -137,7 +137,7 @@ For the documents indicated in the column  titled `Template Available`, the temp
 | SSP Attachment: Laws & Regulations | ✅ - Part of Controls Matrix|
 | SSP Attachment: Rules of Behavior |  | ✅ |
 | SSP Attachment: Separation of Duties Matrix<sup>*</sup> |  |  | ✅ |
-| SSP Attachment: Continuous Monitoring Plan |  | ✅ |
+| SSP Attachment: Continuous Monitoring Plan<sup>*</sup> |  | ✅ |
 
 
 <sup>*</sup> Paramify added Attachments to simplify responses to Access
