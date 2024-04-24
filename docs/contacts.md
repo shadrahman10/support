@@ -20,14 +20,10 @@ Project Security Plan Approvers
 - System System Security Plan Approver
 
 Authorizing Officials
-- Authorizing Official Point of Contact
-- Federal Risk And Authorization Management Program Management Office
+- FedRAMP Management Office
 
 Internal Contacts
-- Information Systems Management Point of Contact
 - Information System Owner
 - Information System Security Officer
-- Infomration System Technical Point of Contact
-- Privacy Official's Point of Contact
 ```
 If additional contacts or approvers are needed for your organization, Paramafy enables you to add more contacts and approvers.
