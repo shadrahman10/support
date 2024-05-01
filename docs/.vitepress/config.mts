@@ -39,14 +39,73 @@ export default defineConfig({
     //   { text: "Home", link: "/" },
     //   { text: "Examples", link: "/markdown-examples" },
     // ],
+    nav: [{ text: "FAQ", link: "/faq" }],
     sidebar: [
       {
         text: "Introduction",
         items: [
-          { text: "Getting Started", link: "/getting-started" },
+          // TODO
+          { text: "What is Paramify?", link: "/what-is-paramify" },
+          // TODO
+          {
+            text: "Why Risk Solutions?", //Getting Started Risk Solutions.  Why Paramify?
+            link: "/getting-started-risk-solutions",
+          },
+          { text: "Getting Started", link: "/getting-started" }, // too much info
           { text: "Release Notes", link: "/release-notes" },
-          // { text: "Markdown Examples", link: "/markdown-examples" },
-          // { text: "Runtime API Examples", link: "/api-examples" },
+        ],
+      },
+      {
+        text: "User Guides (HOW TO)", // Functional, Verbs
+        items: [
+          { text: "Smart Text & Mentions", link: "/smart-text" },
+          // TODO
+          {
+            text: "Splitting Risk Solutions",
+            link: "/splitting-risk-solutions",
+          },
+          { text: "Modeling Inheritance", link: "/inheritance" }, // is defined as part of intake.
+          { text: "Conducting Reviews", link: "/reviews" },
+          { text: "Migrate to Rev5", link: "/migrate-fedramp" },
+          { text: "FAQ by Document", link: "/documents/faq" },
+          { text: "Setting Control Parameters", link: "/control-parameters" },
+          // json
+          // intake
+          // import from another project
+        ],
+      },
+      {
+        text: "Reference (WHAT IS)", // Technical, Nouns
+        items: [
+          // TODO
+          { text: "Data architecture", link: "/data-architecture" },
+          {
+            text: "Projects",
+            collapsed: true,
+            items: [
+              { text: "Key Contacts", link: "/contacts" },
+              { text: "Security Objectives", link: "/objectives" },
+              // TODO
+              { text: "Information Types", link: "/information-types" },
+              { text: "Controls", link: "/controls" },
+              { text: "Project Overview", link: "/diagrams" }, // the narratives
+              { text: "Attachments", link: "/attachments" },
+              { text: "Document Robot", link: "/document-robot" },
+            ],
+          },
+          { text: "Risk Solutions", link: "/risk-solutions" },
+          {
+            text: "Elements",
+            collapsed: true,
+            items: [
+              { text: "Components", link: "/components" },
+              { text: "Parties", link: "/parties" },
+              { text: "Roles", link: "/roles" },
+              { text: "Locations", link: "/locations" },
+              { text: "Data", link: "/data" },
+            ],
+          },
+          { text: "OSCAL", link: "/oscal" },
         ],
       },
       {
@@ -79,25 +138,6 @@ export default defineConfig({
           { text: "UAT", link: "/uat" },
         ],
       },
-      {
-        text: "User Guides",
-        items: [
-          { text: "Risk Solutions", link: "/risk-solutions" },
-          { text: "Smart Text & Mentions", link: "/smart-text" },
-          { text: "Inheritance", link: "/inheritance" },
-          { text: "Reviews", link: "/reviews" },
-          { text: "Projects", link: "/projects" },
-          { text: "Security Objectives", link: "/objectives" },
-          { text: "Controls", link: "/controls" },
-          { text: "Key Contacts", link: "/contacts" },
-          { text: "Project Overview", link: "/diagrams" },
-          { text: "Attachments", link: "/attachments" },
-          { text: "Document Robot", link: "/document-robot" },
-          { text: "OSCAL", link: "/oscal" },
-          { text: "Migrate to Rev5", link: "/migrate-fedramp" },
-          { text: "FAQ by Document", link: "/documents/faq" },
-        ],
-      },
     ],
     lastUpdated: {},
     socialLinks: [
@@ -118,20 +158,3 @@ export default defineConfig({
     outline: "deep",
   },
 });
-
-/**
- * Install with Kubenertes
- * Install with Helm
- * Instlall as Virtual Appliance
- * Install in Azure AKS (KOTS)
- * Install in AWS EKS (KOTS)
- * Install in Google GKE (KOTS)
- * Install in Azure with Helm
- * Install in AWS with Helm
- * Install in Google with Helm
- * Install emebedded in AWS EC2 KURL
- * Install embedded in Azure Compute (KURL)
- * Install embedded in Google Compute (KURL)
- *
- *
- */
