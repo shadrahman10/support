@@ -137,8 +137,8 @@ export default defineConfig({
     },
     footer: {
       message: "Made with ❤️ by Team Paramify",
-      copyright: "<p>Hello</p>© 2023 Paramify, Inc. All Rights Reserved.",
-      // copyright: '<p><p>Copyright © 2023 Paramify, Inc. All Rights Reserved.</p><p><a target="_blank" href="https://www.paramify.com/terms-conditions#privacy-policy">Privacy Policy &#8599;</a></p></p>',
+      copyright:
+        "© 2023 Paramify, Inc. All Rights Reserved.<br/><a target='_blank' href='https://www.paramify.com/terms-conditions#privacy-policy'>Privacy Policy &#8599;</a>",
     },
     search: {
       provider: "local",
@@ -148,7 +148,7 @@ export default defineConfig({
 });
 
 /**
- * Install with Kubenertes
+ * Install with Kubenertesdocs
  * Install with Helm
  * Instlall as Virtual Appliance
  * Install in Azure AKS (KOTS)
