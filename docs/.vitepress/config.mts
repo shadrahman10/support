@@ -18,6 +18,23 @@ export default defineConfig({
         a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
     ],
+    [
+      "script",
+      {
+        async: "",
+        src: "https://www.googletagmanager.com/gtag/js?id=G-PY0PJHYWZV",
+      },
+    ],
+    [
+      "script",
+      {},
+      `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PY0PJHYWZV');
+    `,
+    ],
     ["meta", { name: "og:type", content: "website" }],
     ["meta", { name: "og:locale", content: "en" }],
     ["meta", { name: "og:site_name", content: "Paramify Docs" }],
