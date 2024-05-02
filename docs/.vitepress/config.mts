@@ -35,6 +35,16 @@ export default defineConfig({
       gtag('config', 'G-PY0PJHYWZV');
     `,
     ],
+    [
+      "script",
+      {
+        type: "text/javascript",
+        id: "hs-script-loader",
+        async: "",
+        defer: "",
+        src: "//js.hs-scripts.com/24251729.js",
+      },
+    ],
     ["meta", { name: "og:type", content: "website" }],
     ["meta", { name: "og:locale", content: "en" }],
     ["meta", { name: "og:site_name", content: "Paramify Docs" }],
