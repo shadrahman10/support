@@ -137,12 +137,8 @@ export default defineConfig({
     },
     footer: {
       message: "Made with ❤️ by Team Paramify",
-      copyright: `
-        <p>
-          <p>Copyright © 2023 Paramify, Inc. All Rights Reserved.</p>
-          <p><a target="_blank" href="https://www.paramify.com/terms-conditions#privacy-policy">Privacy Policy &#8599;</a></p>
-        </p>  
-      `,
+      copyright: "© 2023 Paramify, Inc. All Rights Reserved.",
+      // copyright: '<p><p>Copyright © 2023 Paramify, Inc. All Rights Reserved.</p><p><a target="_blank" href="https://www.paramify.com/terms-conditions#privacy-policy">Privacy Policy &#8599;</a></p></p>',
     },
     search: {
       provider: "local",
