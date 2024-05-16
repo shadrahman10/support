@@ -25,6 +25,55 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+
+## 1.30.0 (May 13, 2024)
+
+### Improvements
+
+- Controls Implementation: Adds full text search to Link Risk Solutions view
+- Documents: Added KEV (Known Exploited Vulnerabilites) to generated POAM document
+- Documents: Updated POAM generation to include more details of Deviations
+- Issues: Added ability to show/hide Due Date column in list view
+- Issues: Added more data including Point of Contact, Impacted Requirements, and Links
+- Issues: Added option for Admins to delete all Issues (with warning)
+- Issues: Added Status Date to detail view and generated POAM document
+- Issues: Improved overall layout of detail view
+- Issues: Included Activity log of changes to list and detail views
+- Fixed Documents to properly set Inherited originations checkbox
+- Fixed Issues to show consistent UTC-based milestone dates
+- Fixed Projects to preview result when changing impact level to Default
+
+
+## 1.29.0 (May 7, 2024)
+
+### Improvements
+
+- Documents: Initial generation of FedRAMP POAMs documents from Issues
+- Issues: Added ability to show/hide CVE in list view
+- Issues: Added limited rich text descriptions where supported
+- Issues: Allows manually setting or autogenerating unique POAM ID
+- Issues: Made POAM ID and CVE visible and searchable in list view
+- Issues: Supports importing from POAM template CSV
+- Fixed Attachments download link for FedRAMP Appendix O template
+- Fixed Attachments for TX-RAMP workbook to include parameters
+- Fixed Attachments for TX-RAMP to better name workbook file
+- Fixed Attachments to include both Acronyms and Glossary terms
+- Fixed Attachments to properly identify Shared and Hybrid originations
+- Fixed CMMC projects by removing unnecessary Data types selection
+- Fixed Element imports to not warn about missing FedRAMP systems
+- Fixed Images being deleted to also be removed from storage
+- Fixed Issue detail to always show adjusted risk level
+- Fixed OSCAL export compliance against NIST schema
+- Fixed OSCAL export from mishandling non-string parameters
+- Fixed Risk Solutions filters to sort Responsible role options
+- Fixed Documents to prevent overflow of table cells
+- Fixed Import dialogs to not remember previous filenames
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
+
 ## 1.28.0 (April 19, 2024)
 
 ### Improvements
