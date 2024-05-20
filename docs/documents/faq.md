@@ -100,47 +100,47 @@ If you are converting legacy documentation into custom control responses, you ca
 :::
 
 ## TX-RAMP Documents
-::: details Which TX-RAMP documents are automated by Paramify today?  
 
-Paramify's goal is to generate all feasible TX-RAMP documents for the user.  The table below outlines the current progress.  
+::: details Which TX-RAMP documents are automated by Paramify today?
 
-For the documents indicated in the column  titled `Template Available`, the template is available for downloaded within the Paramify platform in the relevant Attachment page.
+Paramify's goal is to generate all feasible TX-RAMP documents for the user. The table below outlines the current progress.
 
-| Document                  | Paramify Generated | Template Available | Manual/Custom |
-| ----------------------------------- | :---: | :---: | :---: |
-| System Security Plan (SSP) | ✅ |	
-| Boundary & Data Flow Diagram |  |  | ✅ - Part of SSP|
-| Roles & Permissions Matrix | ✅ - Part of SSP |
-| Security Policy - Access Control (AC) | ✅ |			
-| Security Policy - Awareness and Training (AT) | ✅ |
-| Security Policy - Audit and Accountability (AU) | ✅ |
-| Security Policy - Security Assessment and Authorization (CA)	| ✅ |	
-| Security Policy - Configuration Management (CM)	| ✅ |
-| Security Policy - Contingency Planning (CP)	| ✅ |
-| Security Policy - Identification and Authentication (IA) | ✅ |
-| Security Policy - Incident Response (IR) | ✅ |
-| Security Policy - Maintenance (MA) | ✅ |
-| Security Policy - Media Protection (MP) | ✅ |
-| Security Policy - Physial and Environmental Protection (PE)	| ✅ |
-| Security Policy - Planning (PL)	| ✅ |
-| Security Policy - Personnel Security (PS)	| ✅ |
-| Security Policy - Risk Assessment (RA)	| ✅ |
-| Security Policy - System and Services Acquisition (SA) | ✅ |
-| Security Policy - System and Communications Protection (SC) | ✅ |
-| Security Policy - System and Information Integrity (SI) | ✅ |
-| SSP Attachment: Incident Response Plan |  | ✅ |	
-| SSP Attachment: Information System Contingency Plan |  | ✅ |			
-| SSP Attachment: Configuration Management Plan |  | ✅ |	
-| SSP Attachment: Control Implementations | ✅ - Part of CIS/CRM |
-| SSP Attachment: CIS Matrix	| ✅ - Part of Controls Matrix |
-| SSP Attachment: Inventory Workbook	| ✅ - significant inputs required - Part of Controls Matrix |	
-| SSP Attachment: Laws & Regulations | ✅ - Part of Controls Matrix|
-| SSP Attachment: Rules of Behavior |  | ✅ |
-| SSP Attachment: Separation of Duties Matrix<sup>*</sup> |  |  | ✅ |
-| SSP Attachment: Continuous Monitoring Plan<sup>*</sup> |  | ✅ |
+For the documents indicated in the column titled `Template Available`, the template is available for downloaded within the Paramify platform in the relevant Attachment page.
 
+| Document                                                     |                     Paramify Generated                     | Template Available |  Manual/Custom   |
+| ------------------------------------------------------------ | :--------------------------------------------------------: | :----------------: | :--------------: |
+| System Security Plan (SSP)                                   |                             ✅                             |
+| Boundary & Data Flow Diagram                                 |                                                            |                    | ✅ - Part of SSP |
+| Roles & Permissions Matrix                                   |                      ✅ - Part of SSP                      |
+| Security Policy - Access Control (AC)                        |                             ✅                             |
+| Security Policy - Awareness and Training (AT)                |                             ✅                             |
+| Security Policy - Audit and Accountability (AU)              |                             ✅                             |
+| Security Policy - Security Assessment and Authorization (CA) |                             ✅                             |
+| Security Policy - Configuration Management (CM)              |                             ✅                             |
+| Security Policy - Contingency Planning (CP)                  |                             ✅                             |
+| Security Policy - Identification and Authentication (IA)     |                             ✅                             |
+| Security Policy - Incident Response (IR)                     |                             ✅                             |
+| Security Policy - Maintenance (MA)                           |                             ✅                             |
+| Security Policy - Media Protection (MP)                      |                             ✅                             |
+| Security Policy - Physial and Environmental Protection (PE)  |                             ✅                             |
+| Security Policy - Planning (PL)                              |                             ✅                             |
+| Security Policy - Personnel Security (PS)                    |                             ✅                             |
+| Security Policy - Risk Assessment (RA)                       |                             ✅                             |
+| Security Policy - System and Services Acquisition (SA)       |                             ✅                             |
+| Security Policy - System and Communications Protection (SC)  |                             ✅                             |
+| Security Policy - System and Information Integrity (SI)      |                             ✅                             |
+| SSP Attachment: Incident Response Plan                       |                                                            |         ✅         |
+| SSP Attachment: Information System Contingency Plan          |                                                            |         ✅         |
+| SSP Attachment: Configuration Management Plan                |                                                            |         ✅         |
+| SSP Attachment: Control Implementations                      |                ✅ - Part of Controls Matrix                |
+| SSP Attachment: CIS Matrix                                   |                ✅ - Part of Controls Matrix                |
+| SSP Attachment: Inventory Workbook                           | ✅ - significant inputs required - Part of Controls Matrix |
+| SSP Attachment: Laws & Regulations                           |                ✅ - Part of Controls Matrix                |
+| SSP Attachment: Rules of Behavior                            |                                                            |         ✅         |
+| SSP Attachment: Separation of Duties Matrix<sup>\*</sup>     |                                                            |                    |        ✅        |
+| SSP Attachment: Continuous Monitoring Plan<sup>\*</sup>      |                                                            |         ✅         |
 
-<sup>*</sup> Paramify added Attachments to simplify responses to Access
+<sup>\*</sup> Paramify added Attachments to simplify responses to Access
 Controls around least privilege, separation of duties, and continuous monitoring.
 
 Refer to [TX-RAMP Overview](https://dir.texas.gov/sites/default/files/2021-11/TX-RAMP%20Overview%20Webinar%20For%20Vendors.pdf) and [TX-RAMP Vendor Guide - Completing TX-RAMP Assessment Questionnaire](https://dir.texas.gov/sites/default/files/2023-04/TX-RAMP%20Vendor%20Guide%20-%20Completing%20TX-RAMP%20Assessment%20Questionnaire%20%28v2.0%29.pdf) from dir.texas.gov to confirm requirements.
