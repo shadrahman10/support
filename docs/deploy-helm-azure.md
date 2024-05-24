@@ -60,7 +60,7 @@ Follow these steps to create the infrastructure:
 
 ## 2. Helm Install
 Follow these steps to install the application using Helm:
-1. Edit `values-local.yaml` and edit the configuration according to your environment, including SMTP and DB credentials.
+1. Edit `values-azure.yaml` and edit the configuration according to your environment, including SMTP and DB credentials.
 
     :::warning
     Be sure to update ADMIN_EMAIL to match the first user that will login, who can then add other users.
@@ -72,11 +72,11 @@ Follow these steps to install the application using Helm:
 3. Review the Helm templates and then install:
     - If desired, use the `helm template` command to preview the resulting templates that will be applied.
     ```bash
-    helm template paramify oci://registry.paramify.com/paramify/paramify --namespace paramify --values ./values-local.yaml
+    helm template paramify oci://registry.paramify.com/paramify/paramify --namespace paramify --values ./values-azure.yaml
     ```
     - Then actually install the templates into your cluster:
     ```bash
-    helm install paramify oci://registry.paramify.com/paramify/paramify --namespace paramify --values ./values-local.yaml
+    helm install paramify oci://registry.paramify.com/paramify/paramify --namespace paramify --values ./values-azure.yaml
     ```
 4. If you used the default `LoadBalancer` option you should do the following to identify the IP to connect to:
     ```bash

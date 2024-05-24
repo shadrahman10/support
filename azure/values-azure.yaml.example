@@ -1,9 +1,9 @@
 # Paramify configuration
 #
 # Example install:
-#   helm registry login registry.paramify.com --username mike@paramify.com --password <license_id>
-#   helm install paramify oci://registry.paramify.com/paramify/helm/paramify --namespace paramify --values ~/values-local.yaml
-#   helm upgrade paramify oci://registry.paramify.com/paramify/helm/paramify --namespace paramify --values ~/values-local.yaml
+#   helm registry login registry.paramify.com --username paramify@mycompany.com --password <license_id>
+#   helm install paramify oci://registry.paramify.com/paramify/paramify --namespace paramify --values ~/values-azure.yaml
+#   helm upgrade paramify oci://registry.paramify.com/paramify/paramify --namespace paramify --values ~/values-azure.yaml
 
 # Paramify main application endpoint (recommend DNS entry and custom SSL cert (see below))
 services:

@@ -194,7 +194,7 @@ This release includes security-related dependency updates. Updating is recommend
 
 ### Deployments
 
-- Now supports Azure Blob storage in Azure Government (see [new config](https://github.com/paramify/support/blob/main/azure/values-local.yaml.example#L40-L48))
+- Now supports Azure Blob storage in Azure Government (see [new config](https://github.com/paramify/support/blob/main/azure/values-azure.yaml.example#L40-L48))
 - Fixed use of persistent volume in embedded DB (may require backup/restore of DB)
 
 ### Security

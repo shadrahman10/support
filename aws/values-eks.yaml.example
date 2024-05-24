@@ -1,0 +1,87 @@
+# Paramify Helm configuration example for AWS EKS
+#
+# Example install:
+#   helm registry login registry.paramify.com --username paramify@mycompany.com --password <license_id>
+#   helm install paramify oci://registry.paramify.com/paramify/paramify --namespace paramify --values ~/values-eks.yaml
+#   helm upgrade paramify oci://registry.paramify.com/paramify/paramify --namespace paramify --values ~/values-eks.yaml
+
+# Paramify main application endpoint (recommend DNS entry and SSL cert)
+services:
+  paramify:
+    type: LoadBalancer  # optionally ClusterIP or NodePort
+    annotations:
+      service.beta.kubernetes.io/aws-load-balancer-ssl-cert: "arn:aws:acm:<region>:<account_id>:certificate/<guid>"  # replace with your SSL cert
+      service.beta.kubernetes.io/aws-load-balancer-ssl-ports: http
+      service.beta.kubernetes.io/aws-load-balancer-backend-protocol: https
+      service.beta.kubernetes.io/load-balancer-source-ranges: "192.168.0.1/32"  # replace with your IP addresses, or remove for public access
+    ports:
+      http:
+        nodePort: null  # set preferred port (30000-32767) or null to autoassign
+        port: 443
+
+# Optionally reference secret with custom SSL cert for container (data with tls.key/tls.cert)
+#apps:
+#   paramify:
+#     volumes:
+#     - name: paramify-secrets
+#       secret:
+#         secretName: paramify-custom-tls
+
+# Custom environment configuration (replace <val> entries)
+configmaps:
+  paramify:
+    data:
+      AUTH_SMTP_ENABLED: "true"
+      SMTP_ENABLED: "true"
+      SMTP_FROM: "Paramify <noreply@mycompany.com>"
+      SMTP_HOST: "<smtp_host>"
+      SMTP_PORT: "465"
+      SMTP_USER: "mail@mycompany.com"
+      ADMIN_EMAIL: "user@mycompany.com"
+      APP_BASE_URL: "https://paramify.mycompany.com"  # if DNS is set on LB then match here (e.g., "https://paramify.mycompany.com")
+      AUTH_GOOGLE_ENABLED: "false"
+      AUTH_GOOGLE_CLIENT_ID: "<guid>.apps.googleusercontent.com"
+      AUTH_MICROSOFT_ENABLED: "false"
+      AUTH_MICROSOFT_CLIENT_ID: "<guid>"
+      AUTH_OKTA_ENABLED: "false"
+      AUTH_OKTA_DOMAIN: "<id>.okta.com"
+      AUTH_OKTA_CLIENT_ID: "<guid>"
+      AWS_STORAGE_BUCKET_NAME: "paramify-mycompany-s3"
+      AWS_REGION: "<region>"
+      #CLOUDFRONT_DOMAIN: "<custom>.cloudfront.net"  # optionally specify a CloudFront domain, if used
+  document-robot:
+    data:
+      STORAGE_PROVIDER: "AWSS3"
+      AWS_S3_BUCKET: "paramify-mycompany-s3"
+      AWS_REGION: "<region>"
+  admission:
+    data:
+      WHITELISTED_REGISTRIES: "registry.paramify.com,proxy.paramify.com,ghcr.io,cgr.dev,kotsadm,minio,rqlite,openebs,602401143452.dkr.ecr.us-west-2.amazonaws.com"  # update the AWS domain for your region in https://docs.aws.amazon.com/eks/latest/userguide/add-ons-images.html
+
+secrets:
+  paramify:
+    data:
+      AUTH_GOOGLE_CLIENT_SECRET: "<secret>"
+      AUTH_MICROSOFT_CLIENT_SECRET: "<secret>"
+      AUTH_OKTA_CLIENT_SECRET: "<secret>"
+      SMTP_PASSWORD: "<secret>"
+
+serviceAccounts:
+  paramify:
+    annotations:
+      eks.amazonaws.com/role-arn: "arn:aws:iam::<account_id>:role/paramify-mycompany-eks-sa-role"  # replace with your IAM role
+
+paramify:
+  admission:
+    enabled: true  # optionally enable for admission webhook preventing unknown image sources
+  #postgresPassword: "<password>"  # password for container db (not recommended)
+  externalPostgresql:
+    enabled: true
+    username: "paramify"
+    database: "paramify"
+    password: "<password>"
+    host: "paramify-mycompany-db.<guid>.<region>.rds.amazonaws.com"  # replace with your db url
+    port: "5432"
+  pgbackup:
+    enabled: false  # automated daily backup for container db (recommended if using container db)
+
