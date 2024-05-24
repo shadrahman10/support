@@ -19,8 +19,14 @@ services:
         nodePort: null  # set preferred port (30000-32767) or null to autoassign
         port: 443
 
+apps:
+  admission:
+    containers:
+      admission:
+        env:
+        - name: WHITELISTED_REGISTRIES
+          value: "registry.paramify.com,proxy.paramify.com,ghcr.io,cgr.dev,kotsadm,minio,rqlite,openebs,602401143452.dkr.ecr.us-west-2.amazonaws.com"  # update the AWS domain for your region from https://docs.aws.amazon.com/eks/latest/userguide/add-ons-images.html
 # Optionally reference secret with custom SSL cert for container (data with tls.key/tls.cert)
-#apps:
 #   paramify:
 #     volumes:
 #     - name: paramify-secrets
@@ -54,9 +60,6 @@ configmaps:
       STORAGE_PROVIDER: "AWSS3"
       AWS_S3_BUCKET: "paramify-mycompany-s3"
       AWS_REGION: "<region>"
-  admission:
-    data:
-      WHITELISTED_REGISTRIES: "registry.paramify.com,proxy.paramify.com,ghcr.io,cgr.dev,kotsadm,minio,rqlite,openebs,602401143452.dkr.ecr.us-west-2.amazonaws.com"  # update the AWS domain for your region in https://docs.aws.amazon.com/eks/latest/userguide/add-ons-images.html
 
 secrets:
   paramify:
@@ -73,7 +76,7 @@ serviceAccounts:
 
 paramify:
   admission:
-    enabled: true  # optionally enable for admission webhook preventing unknown image sources
+    enabled: false  # optionally enable for admission webhook preventing unknown image sources
   #postgresPassword: "<password>"  # password for container db (not recommended)
   externalPostgresql:
     enabled: true
