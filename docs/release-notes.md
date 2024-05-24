@@ -25,6 +25,36 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+## 1.31.0 (May 23, 2024)
+
+### Improvements
+
+- Elements: Added initial global import and export for Inventory
+- Issues: Added ability to filter by Deviation status
+- Issues: Added ability to specify impacted assets
+- Issues: Added support for multiple originations
+- Issues: Improved Links editing and shows favicon for known domains
+- Issues: Link valid CVE IDs to NIST summary page
+- Fixed Collections to also include Software as a filter option
+- Fixed Documents for POAM to include CSP, System Name, and other metadata
+- Fixed Documents for POAM to include more fields for Deviations
+- Fixed Documents to correctly identify Inherited originations
+- Fixed Documents to improve Inventory workbook for FedRAMP Rev 5
+- Fixed Documents to show open and closed POAMs on proper sheets
+- Fixed Imports of Elements to not warn when missing unnecessary fields
+- Fixed Issues to report "changes saved" on updates
+- Fixed Projects from reporting a 500 error after deletion
+- Fixed Projects security impact level from extending off small windows
+- Fixed Projects to delete diagram images on project deletion
+- Fixed Projects to import proper catalog for StateRAMP
+- Fixed Projects to include Alternative Implementation in CMMC SPRS score
+- Fixed UI dropdowns to select when clicking anywhere in row
+- Fixed UI to include page titles on all pages
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
 
 ## 1.30.0 (May 13, 2024)
 
