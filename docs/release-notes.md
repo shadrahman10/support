@@ -25,6 +25,39 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+## 1.32.0 (June 10, 2024)
+
+### Improvements
+
+- Documents: Added custom Appendix A attachment for FedRAMP LI-SaaS projects
+- Issues: Added icon for selected issue type next to ID in list view
+- Issues: Added next/previous navigation buttons to detail page
+- Issues: Added sortable Due Date field to list view
+- Issues: Added type selection dialog when creating new Issues
+- Issues: Calculate initial Due Date as standard SLA from observation date
+- Issues: Support importing Point of Contact from POAM template
+- Risk Solutions: Expanded text search to also match main components and mentions
+- Fixed Documents to add statement of user counts to CMMC
+- Fixed Documents to export POAM template with proper filename
+- Fixed Documents to include images in descriptions for CMMC
+- Fixed Documents to include plugin ID in generated POAM template
+- Fixed Documents to show system unique identifier for CMMC
+- Fixed Glossary and Acronyms to warn when trying to add a blank entry
+- Fixed Imports of Elements to warn when attempting to link invalid types to Data
+- Fixed Imports of Issues to better handle missing columns and truncated rows
+- Fixed Imports of Issues to give warnings on invalid or duplicate origins
+- Fixed Imports of Projects to warn when linking non-unique Risk Solutions
+- Fixed Issues to not include empty party references in OSCAL
+- Fixed Issues to properly search by name when selecting origins
+- Fixed Projects being deleted from returning an error in certain cases
+- Fixed Projects to include GR controls in DOD Rev 5
+- Fixed Risk Solutions to not show "null" in content for invalid smart text
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
+
 ## 1.31.0 (May 23, 2024)
 
 ### Improvements
