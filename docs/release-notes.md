@@ -25,6 +25,29 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+## 1.33.0 (June 18, 2024)
+
+### Improvements
+
+- Documents: Adjust required Attachments based on project security impact level
+- Documents: Initial support for Crosswalk document of Risk Solutions across catalogs
+- Workspaces: Added ability for Admin to rename their Workspaces
+- Workspaces: Initial support for provisioning multiple Workspaces
+- Fixed Activity logs to reduce reporting of empty changes
+- Fixed Documents for POAM to always show Status Date
+- Fixed Elements to prevent error when adding Revisions
+- Fixed Images using Azure Blob storage that won't load due to security policy
+- Fixed Imports of Revisions to support external URL links
+- Fixed Issues detail page to load less data for faster response
+- Fixed Projects to prevent potential error when viewing Controls Selection
+- Fixed Risk Solutions by streamlining project and suggested mappings experience
+- Fixed Risk Solutions to only show Subfamily when a Family is specified
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
+
 ## 1.32.0 (June 10, 2024)
 
 ### Improvements
