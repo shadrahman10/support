@@ -25,6 +25,24 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+## 1.34.0 (June 28, 2024)
+
+### Improvements
+
+- Attachments: Added option to selectively enable or disable auto-generation
+- Attachments: Enabled managing User Summary details for FedRAMP Rev5 in Attachment options
+- Documents: Added ability export revision history
+- Issues: Added support for importing POAMs from FedRAMP template xlsx (in addition to csv)
+- Risk Solutions: Flags errors and warnings on potential problems that need attention
+- Risk Solutions: Improved usability of view for managing suggested mappings
+- Risk Solutions: Initial Crosswalk summary to show applicability to other profiles
+- Fixed Editors to limit height and scroll content for some use cases
+- Fixed missing StateRAMP template for PIA attachment
+- Fixed Projects to include missing Activity for changes to Project Settings
+- Fixed Risk Solutions being detached from library not properly created as Custom Response
+- Fixed Risk Solutions review status from being reset by just clicking in and out of editor
+
+
 ## 1.33.0 (June 18, 2024)
 
 ### Improvements
