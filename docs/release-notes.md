@@ -31,7 +31,7 @@ Once the release notes are approved and merged then notification should be sent 
 
 - Attachments: Added option to selectively enable or disable auto-generation
 - Attachments: Enabled managing User Summary details for FedRAMP Rev5 in Attachment options
-- Documents: Added ability export revision history
+- Documents: Added ability to export revision history
 - Issues: Added support for importing POAMs from FedRAMP template xlsx (in addition to csv)
 - Risk Solutions: Flags errors and warnings on potential problems that need attention
 - Risk Solutions: Improved usability of view for managing suggested mappings
