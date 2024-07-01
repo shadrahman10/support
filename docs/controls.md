@@ -15,7 +15,7 @@ The platform makes it easy to automatically match security objective parameter s
 
 <YouTube src="https://www.youtube.com/embed/TOtNIrYfYI8?si=SNykHtR1fjX_CXGX" />
 
-Implementation status for a control is calculated based off of the lowest implementation status of all linked risk solutions for the given control. 
+Implementation status for a control is calculated based off of the lowest implementation status of all linked risk solutions and custom responses for the given control. 
 From highest to lowest implementation, the statuses are as follows:
 - Implemented
 - Planned
