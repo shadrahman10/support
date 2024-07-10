@@ -25,6 +25,28 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+## 1.35.0 (July 10, 2024)
+
+### Improvements
+
+- Documents: Added option to include eMASS spreadsheet when generating documents
+- Issues: Added license option to grant a list of users access to Issues alpha
+- Workspaces: Ability to specify multiple Admins to be provisioned during deployment
+- Workspaces: Support for provisioning multiple workspaces based on license
+- Fixed Custom Responses from being removed when deleting all Risk Solutions
+- Fixed Documents for FedRAMP Rev4 to include custom Acronyms and Glossary
+- Fixed Documents for FedRAMP Rev5 to always include Appendix L
+- Fixed Elements to disallow setting an empty name
+- Fixed Images content security to support old AWS S3 bucket naming (with dots)
+- Fixed Images failing to load in Firefox due to extra slash in Azure endpoint
+- Fixed Risk Solutions not always saving Remarks for implementation status
+- Fixed Risk Solutions reviewed status being reset when no changes were made
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
+
 ## 1.34.0 (June 28, 2024)
 
 ### Improvements
