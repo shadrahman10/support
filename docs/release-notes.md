@@ -25,7 +25,7 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
-## 1.35.0 (July 10, 2024)
+## 1.35.0 (July 9, 2024)
 
 ### Improvements
 
