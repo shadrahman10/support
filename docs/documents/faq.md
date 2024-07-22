@@ -99,6 +99,70 @@ If you are converting legacy documentation into custom control responses, you ca
 
 :::
 
+## Leveraging my existing SSP
+
+:::
+
+### Paramify's Recommendation
+Paramify recommends going all in with Risk Solutions to enable the following business value:
+1. As organizations scale the number of security objectives required to do business, responding one by one to individual requirements does not scale and hinders GTM efficiency. Risk solutions map to multiple security catalogs and enable flexibility and agility to GTM quicker as security objectives incrementally increase.
+2. Risk Solutions provide a platform to drive shared risk adoption across the organization so security becomes an organization collective effort and not owned only by the GRC team
+
+Paramify's intake process and Risk Solution library enable quick adoption.  However, we recognize teams have made significant investements in both time and money in their existing SSPs and want to see those prior investments incorporated into their Paramify SSP.  We are seeing this done successfully in three (4) ways:
+1. After completing the intake process, Risk Solutions are reviewed with the existing SSP in hand to add or modify context to those Risk Solutions that are specific to your environment
+2. Control implementation statements are copied and pasted into Custom Responses for each control requirement with the respective implementation details
+3. The existing SSP is ingested by Paramify to create Custom Responses for each control requirement in Paramify
+4. Control implementation statements via copy/paste or ingested and custom Risk Solutions via intake are reviewed in Paramify to evaluate best use of content as Custom Responses (project specific) or Risk Solutions (Global).
+
+#### Risk Solution Guiding Principles
+Risk Solution Definition:
+1. Describe a security capability that addresses the who, what, how, and when
+2. Standardized language that is catalog-agnostic to fulfill multi-catalog set of requirements
+3. Flexible and agile to lift and replace the who, what, and when elements as the business evolves
+4. Defines shared risk ownership across the organization and leveraged third party providers
+
+#### Steps to Convert Custom / Existing Responses to Risk Solutions Architecture
+1. Initial Intake based on Existing SSP
+1a. Perform self-served intake / SSP ingestion to define elements and risk solutions inventory from existing SSP
+1b. Import all elements and risk solutions inventory based on existing SSP into client's workspace
+1c. Apply suggested risk solutions produced from step #1 to list of all security objective catalog requirements
+2. Defining Foundation for Security Capabilities
+2a. Assess what is necessary vs. superfluous in existing custom response to meet associated control requirement
+2b. Consolidate multi-component capability existing custom responses to a generic main component capability
+2c. Define the security capability key elements from existing custom response:
+2c(1). Who - primary responsible owner of the capability
+"2c(1) Note - Multiple Who scenarios:
+1) Partially inherited from a third party provider + Shared internal organizational ownership
+2) Customer responsibility + Shared internal organizational ownership"
+2c(2). What - main component driving the capability (ideally this is owned by the Who party)
+2c(3). How - procedures for implementing the capability (driven from the What element potentially in conjunction with other components)
+2c(4). When - frequency with which the capability is performed
+3. Content Merge to Risk Solutions Architecture (see proposed template to complete this phase here)
+3a. Refine suggested risk solutions created from the intake process based on outputs of phase #2 (custom responses and risk solutions can be viewed together in the controls implementation view as well as the Document Robot eMass deliverable)
+3b. Associate additional risk solutions not mapped to the requirement based on context from custom response not addressed in suggested risk solutions
+
+Add Examples
+
+#### Custom Response vs Risk Solutions
+| Paramify Feature                                                     |                     Risk Solution                    | Custom Response | Comments |
+| ------------------------------------------------------------ | :--------------------------------------------------------: | :----------------: | :--------------: |
+| Response Mapping to Control Requirement | global capabilities that can be mapped to multiple projects and multiple control requirements to minimize input and maximize deliverable outputs | project and control requirement specific mapping |  |
+| Collaborator functionality (Solution Owners) | capability or solution owner is given restricted access to view and/or edit their risk solutions as the approach or the people, places, and things change for the risk solution.  The Review status is automatically updated to "Not reviewed" so the GRC Admin or ISSO can review the changes, make updates as needed, and mark the latest version of the risk solution as "Reviewed" | N/A |  |
+| Appendix A Generation | Each capability will have a distinct origination and implementation status.  The overall control implementation status will be the least of all applicable risk solutions | Each custom response will have a distinct implementation status but can have multiple originations.  The custom response should include all applicable originations or be comprehensive across custom responses.  The overall control implementation status will be the least of all applicable custom responses |  |
+| Policies	| N/A | N/A | Control Parameters are the only input - all other details are hardcoded |
+| Procedures | Capability is describing how things are done so it can be leveraged to produce the procedure document | Reads as a control response rather than how the capability is performed |  |
+| CIS	| Each capability will have a distinct origination and implementation status.  The overall control implementation status will be the least of all applicable risk solutions | Each custom response will have a distinct implementation status but can have multiple originations.  The custom response should include all applicable originations or be comprehensive across custom responses.  The overall control implementation status will be the least of all applicable custom responses |  |
+| CRM | A single Risk Solution can be used but their must be two narratives, 1) Internal role responsibility and 2) Customer Managed role responsibility.  Origination for the relevant custom response or risk solution should be Configured by Customer or Provided by Customer | Need a distinct custom response to capture the customer responsibility or the response inclusive of multiple responsible parties will be captured in the CRM |  |
+| Automatic Mode (Project Overview: User Summary Table, Interconnections, Systems Ports, Protocols, & Services, and Leveraged Authorizations) | Not Specific | Not Specific | When an element is mentioned in the risk solution or custom response and automatic mode is enabled, then the Project Overview section will limit the elements documented in the SSP to those mentioned components. |
+| Review: Custom Response vs Risk Solution	| Reviewed in the Risk Solution view.  Overall Review progress for Risk Solutions is available in the Risk Solutions view | Reviewed in the control implementation view.  Review status is only available control by control.  There is not an overall review status dashboard |  |
+| Organization by Family & Subfamily or Control Family | risk solutions can be organized by family and subfamily.  The Risk Solution may be mapped to responsed to multiple control families. | custom responses are control requirement specific so they would only be assigned a family and subfamily upon conversion to a risk solution. The custom response will be specfic to the control family for which the control requirements is relevant
+| FedRAMP Rev 4 to Rev 5 Automated Transiiton | Paramify's Risk Solutions broach both Rev 4 and Rev 5 control requirements enabling that a Rev 4 project can be converted to a Rev 5 Project with the click of a button. | Custom responses are specific to the control requirement for Rev 4 or Rev 5, not both. |  |
+| Crosswalk	| Crosswalk is mapped by Risk Solution.  | Custom responses by design are specific to a control requirement within a framework. |  |
+| Evidence |  |  |  |
+| Mentions	| Not Specific | Not Specific | Links custom responses and risk solutions to the elements; Enable Automatic Mode deliverables |
+
+:::
+
 ## TX-RAMP Documents
 
 ::: details Which TX-RAMP documents are automated by Paramify today?
