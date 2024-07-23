@@ -108,7 +108,7 @@ Paramify recommends going all in with Risk Solutions to enable the following bus
 1. As organizations scale the number of security objectives required to do business, responding one by one to individual requirements does not scale and hinders GTM efficiency. Risk solutions map to multiple security catalogs and enable flexibility and agility to GTM quicker as security objectives incrementally increase.
 2. Risk Solutions provide a platform to drive shared risk adoption across the organization so security becomes an organization collective effort and not owned only by the GRC team
 
-Paramify's intake process and Risk Solution library enable quick adoption.  However, we recognize teams have made significant investements in both time and money in their existing SSPs and want to see those prior investments incorporated into their Paramify SSP.  We are seeing this done successfully in three (4) ways:
+Paramify's intake process and Risk Solution library enable quick adoption.  However, we recognize teams have made significant investements in both time and money in their existing SSPs and want to see those prior investments incorporated into their Paramify SSP.  We are seeing this done successfully in four (4) ways:
 1. After completing the intake process, Risk Solutions are reviewed with the existing SSP in hand to add or modify context to those Risk Solutions that are specific to your environment
 2. Control implementation statements are copied and pasted into Custom Responses for each control requirement with the respective implementation details
 3. The existing SSP is ingested by Paramify to create Custom Responses for each control requirement in Paramify
